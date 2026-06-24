@@ -12,7 +12,8 @@ lang: en
 #   • User/org site  (repo named <username>.github.io)  ->  leave baseurl: ""
 #   • Project site   (repo named e.g. za-dokta)         ->  baseurl: "/za-dokta"
 # Every link/asset uses the relative_url filter, so this is the ONLY line to change.
-baseurl: ""
+# Configured for a PROJECT site named "za-dokta". Change if you use a different repo name.
+baseurl: "/za-dokta"
 url: ""
 
 # --- Collections --------------------------------------------------------------
