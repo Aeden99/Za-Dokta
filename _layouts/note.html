@@ -1,0 +1,101 @@
+---
+layout: default
+---
+{%- comment -%} Ordered list of notes for prev/next navigation. {%- endcomment -%}
+{%- assign ordered = site.notes | sort: 'order' -%}
+
+<div class="note-shell wrap">
+  <aside class="toc" aria-label="Table of contents">
+    <div class="toc-inner">
+      <p class="toc-title">On this page</p>
+      <nav id="toc-nav"></nav>
+    </div>
+  </aside>
+
+  <article class="note prose">
+    <header class="note-head">
+      {%- if page.topic -%}<p class="kicker">{{ page.topic }}</p>{%- endif -%}
+      <h1>{{ page.title }}</h1>
+      {%- if page.subtitle -%}<p class="note-subtitle">{{ page.subtitle }}</p>{%- endif -%}
+      <p class="note-meta">
+        {%- if page.date -%}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>{%- endif -%}
+        {%- if page.tags -%}
+          <span class="tag-list">
+            {%- for t in page.tags -%}<span class="tag">{{ t }}</span>{%- endfor -%}
+          </span>
+        {%- endif -%}
+      </p>
+    </header>
+
+    {{ content }}
+
+    {%- assign prev = nil -%}
+    {%- assign next = nil -%}
+    {%- assign found = false -%}
+    {%- for n in ordered -%}
+      {%- if found and next == nil and n.url != page.url -%}{%- assign next = n -%}{%- endif -%}
+      {%- if n.url == page.url -%}
+        {%- assign found = true -%}
+      {%- elsif found == false -%}
+        {%- assign prev = n -%}
+      {%- endif -%}
+    {%- endfor -%}
+    <nav class="note-pager">
+      <div class="pager-prev">
+        {%- if prev -%}<a href="{{ prev.url | relative_url }}"><span>← Previous</span><strong>{{ prev.title }}</strong></a>{%- endif -%}
+      </div>
+      <div class="pager-next">
+        {%- if next -%}<a href="{{ next.url | relative_url }}"><span>Next →</span><strong>{{ next.title }}</strong></a>{%- endif -%}
+      </div>
+    </nav>
+  </article>
+</div>
+
+<script>
+  // Build the table of contents from h2/h3 in the article, with anchor links.
+  (function () {
+    var article = document.querySelector('.note.prose');
+    var nav = document.getElementById('toc-nav');
+    if (!article || !nav) return;
+    var heads = article.querySelectorAll('h2, h3');
+    if (!heads.length) { document.querySelector('.toc').style.display = 'none'; return; }
+
+    function slugify(s) {
+      return s.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-');
+    }
+    var seen = {};
+    var ul = document.createElement('ul');
+    heads.forEach(function (h) {
+      if (!h.id) {
+        var base = slugify(h.textContent) || 'section';
+        var id = base, i = 1;
+        while (seen[id] || document.getElementById(id)) { id = base + '-' + (i++); }
+        h.id = id;
+      }
+      seen[h.id] = true;
+      var li = document.createElement('li');
+      li.className = 'toc-' + h.tagName.toLowerCase();
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    nav.appendChild(ul);
+
+    // Highlight the current section while scrolling.
+    var links = nav.querySelectorAll('a');
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          links.forEach(function (a) { a.classList.remove('active'); });
+          var cur = byId[e.target.id];
+          if (cur) cur.classList.add('active');
+        }
+      });
+    }, { rootMargin: '0px 0px -75% 0px', threshold: 0 });
+    heads.forEach(function (h) { observer.observe(h); });
+  })();
+</script>

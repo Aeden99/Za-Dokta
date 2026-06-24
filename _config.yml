@@ -1,0 +1,52 @@
+# --- Site ---------------------------------------------------------------------
+title: "Za Dokta"
+tagline: "Working notes on the algebraic structure of Feynman integrals & adjacent mathematical physics"
+description: >-
+  A growing, comprehensive set of working notes on Feynman integrals — twisted
+  cohomology, Euler/Landau discriminants, intersection numbers, the motivic
+  coaction, and the analytic structure of amplitudes.
+author: "Devansh"
+lang: en
+
+# IMPORTANT — hosting URL.
+#   • User/org site  (repo named <username>.github.io)  ->  leave baseurl: ""
+#   • Project site   (repo named e.g. za-dokta)         ->  baseurl: "/za-dokta"
+# Every link/asset uses the relative_url filter, so this is the ONLY line to change.
+baseurl: ""
+url: ""
+
+# --- Collections --------------------------------------------------------------
+collections:
+  notes:
+    output: true
+    permalink: /notes/:path/
+
+defaults:
+  - scope: { path: "", type: notes }
+    values: { layout: note }
+  - scope: { path: "" }
+    values: { layout: default }
+
+# --- Markdown & math ----------------------------------------------------------
+# math_engine: null  ->  kramdown does NOT touch $...$ / $$...$$; MathJax renders
+# everything. This means you can paste notes using plain single-$ inline math.
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: null
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+# --- Plugins (all whitelisted by GitHub Pages) --------------------------------
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# --- Build --------------------------------------------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github

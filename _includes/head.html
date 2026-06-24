@@ -1,0 +1,14 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  {% comment %} SEO + canonical + Open Graph, all driven by front matter. {% endcomment %}
+  {% seo %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}"
+        href="{{ '/feed.xml' | relative_url }}">
+
+  {% include mathjax.html %}
+</head>

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="home wrap">
+  <section class="hero">
+    <h1>{{ site.title }}</h1>
+    <p class="hero-tagline">{{ site.tagline }}.</p>
+    {{ content }}
+  </section>
+
+  {%- comment -%} Group notes by `topic`, ordering topics by their smallest `order`. {%- endcomment -%}
+  {%- assign by_topic = site.notes | group_by: 'topic' -%}
+  {%- assign topics = by_topic | sort: 'name' -%}
+
+  <section class="note-index">
+    {%- for group in topics -%}
+      <div class="topic-block">
+        <h2 class="topic-title">{{ group.name | default: "Notes" }}</h2>
+        <ul class="note-cards">
+          {%- assign items = group.items | sort: 'order' -%}
+          {%- for note in items -%}
+            <li class="note-card">
+              <a href="{{ note.url | relative_url }}">
+                <h3>{{ note.title }}</h3>
+                {%- if note.summary -%}<p class="card-summary">{{ note.summary | strip_html | truncate: 240 }}</p>{%- endif -%}
+                <p class="card-meta">
+                  {%- if note.date -%}<time>{{ note.date | date: "%b %Y" }}</time>{%- endif -%}
+                  {%- if note.tags -%}<span class="card-tags">{{ note.tags | join: " · " }}</span>{%- endif -%}
+                </p>
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endfor -%}
+  </section>
+</div>
