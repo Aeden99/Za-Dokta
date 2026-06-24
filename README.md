@@ -1,7 +1,7 @@
 # Za Dokta
 
 Working notes on the algebraic structure of Feynman integrals & adjacent mathematical
-physics — a Jekyll site built to host a growing, cross-referenced set of Markdown notes
+physics. A Jekyll site built to host a growing, cross-referenced set of Markdown notes
 with full LaTeX math (via MathJax) on GitHub Pages.
 
 ## Adding a new note
@@ -22,10 +22,10 @@ with full LaTeX math (via MathJax) on GitHub Pages.
    ---
    ```
 3. Write the body in Markdown. **Math just works**: use single `$...$` for inline and
-   `$$...$$` for display — kramdown is set to `math_engine: null`, so MathJax renders all
+   `$$...$$` for display. kramdown is set to `math_engine: null`, so MathJax renders all
    of it untouched. No need to double-up dollar signs.
 
-That's it — the home-page index, the per-note table of contents, and prev/next navigation
+That's it. the home-page index, the per-note table of contents, and prev/next navigation
 are all generated automatically from the front matter and headings.
 
 ## Deploying to GitHub Pages (simplest path — no local Ruby needed)
