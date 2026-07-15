@@ -18,7 +18,8 @@ The notes on this site are the residue of a specific reading program, aimed at o
 target: the singularity-type problem (§6 of the
 [algebraic-structure note]({{ '/notes/algebraic-structure-of-feynman-integrals/' | relative_url }})).
 This page is the program itself: what to read, in what order, and what each item is
-*for*. Kept current as the notes grow.
+*for*. Kept current as the notes grow. The whole toolkit, run end-to-end on the smallest
+example: [The Bubble, Six Ways]({{ '/notes/the-bubble-six-ways/' | relative_url }}).
 
 ---
 

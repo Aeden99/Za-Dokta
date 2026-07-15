@@ -88,6 +88,9 @@ $$ \mathrm{Disc}\, I(z) \;=\; \pm \langle \Gamma, \delta \rangle \int_{\delta(z)
   algebraic-structure note). Computing the type = computing the Jordan data of $$T$$ on the
   cycles the contour actually meets, plus the leading exponents.
 
+Every statement in this section is worked to the last constant on the smallest example:
+[The Bubble, Six Ways]({{ '/notes/the-bubble-six-ways/' | relative_url }}).
+
 ---
 
 ## 4. Relative Picard–Lefschetz: the Feynman Refinement
