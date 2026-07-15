@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div class="wrap prose" style="max-width: 46rem; margin-inline: auto;">
+<div class="wrap prose" style="max-width: 46rem; margin-inline: auto;" markdown="1">
 
 # About
 
@@ -28,7 +28,10 @@ The concrete target is the singularity-type problem: near a point of the Landau 
 discriminant, determine the local analytic behavior of the integral (branch type, power,
 log), not just its location. The Morse case is solved; the degenerate and
 positive-dimensional cases are open. The notes build background for an attack through
-relative Picard–Lefschetz theory. *The Reading Program* note tracks the path.
+relative Picard–Lefschetz theory.
+[The Reading Program]({{ '/notes/the-reading-program/' | relative_url }}) tracks the path;
+[The Bubble, Six Ways]({{ '/notes/the-bubble-six-ways/' | relative_url }}) shows the
+toolkit running on the smallest example.
 
 ### How this site is organised
 
