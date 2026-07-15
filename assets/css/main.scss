@@ -8,15 +8,15 @@
    ========================================================================== */
 
 :root {
-  --bg:        #f9f8f3;   /* ivory paper */
-  --surface:   #f9f8f3;
-  --text:      #1a1b1e;   /* cool ink */
-  --muted:     #61646c;
-  --rule:      #cfccc0;
-  --rule-soft: #e5e2d8;
-  --accent:    #1c4587;   /* prussian ink */
-  --accent-2:  #1c4587;
-  --code-bg:   #efede3;
+  --bg:        #f7f5ef;   /* warm cream paper */
+  --surface:   #f7f5ef;
+  --text:      #2b2a24;   /* soft warm ink */
+  --muted:     #6e6c61;
+  --rule:      #d9d6c9;
+  --rule-soft: #e6e3d7;
+  --accent:    #2e5379;   /* calm steel-prussian */
+  --accent-2:  #2e5379;
+  --code-bg:   #eeebe0;
   --tag-bg:    transparent;
 
   --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
@@ -28,20 +28,20 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg:#141519; --surface:#141519; --text:#e4e2d9; --muted:#999da7;
-    --rule:#3a3d46; --rule-soft:#272a31; --accent:#96b5e3; --accent-2:#96b5e3;
-    --code-bg:#1e2026; --tag-bg:transparent;
+    --bg:#21201c; --surface:#262521; --text:#cbc5b6; --muted:#8f8b7e;
+    --rule:#3d3a32; --rule-soft:#2e2c26; --accent:#9fb4d0; --accent-2:#9fb4d0;
+    --code-bg:#2a2823; --tag-bg:transparent;
   }
 }
 :root[data-theme="dark"] {
-  --bg:#141519; --surface:#141519; --text:#e4e2d9; --muted:#999da7;
-  --rule:#3a3d46; --rule-soft:#272a31; --accent:#96b5e3; --accent-2:#96b5e3;
-  --code-bg:#1e2026; --tag-bg:transparent;
+  --bg:#21201c; --surface:#262521; --text:#cbc5b6; --muted:#8f8b7e;
+  --rule:#3d3a32; --rule-soft:#2e2c26; --accent:#9fb4d0; --accent-2:#9fb4d0;
+  --code-bg:#2a2823; --tag-bg:transparent;
 }
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
 
 body {
   margin: 0;
@@ -65,16 +65,13 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; }
 
 /* --- Header (masthead) ------------------------------------------------------ */
 .site-header {
-  position: sticky; top: 0; z-index: 50;
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
-  backdrop-filter: saturate(120%) blur(8px);
-  border-bottom: 3px double var(--rule);
+  border-bottom: 1px solid var(--rule);
 }
-.header-inner { display: flex; align-items: baseline; justify-content: space-between; height: 3.4rem; align-items: center; }
-.site-brand { font-family: var(--serif); font-style: italic; font-weight: 600; letter-spacing: .01em; color: var(--text); font-size: 1.15rem; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 3.4rem; }
+.site-brand { font-family: var(--serif); font-style: italic; font-weight: 600; letter-spacing: .01em; color: var(--text); font-size: 1.05rem; }
 .site-brand:hover { text-decoration: none; color: var(--accent); }
-.site-nav { display: flex; align-items: center; gap: 1.4rem; font-family: var(--sans); }
-.site-nav a { color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .16em; }
+.site-nav { display: flex; align-items: center; gap: 1.3rem; margin-left: auto; font-family: var(--sans); }
+.site-nav a { color: var(--muted); font-size: .85rem; letter-spacing: .02em; }
 .site-nav a:hover { color: var(--accent); text-decoration: none; }
 .theme-toggle {
   background: none; border: 1px solid transparent; color: var(--muted);
@@ -85,11 +82,12 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; }
 .site-main { min-height: 70vh; padding-block: 2.5rem 4rem; }
 
 /* --- Home ------------------------------------------------------------------- */
-.hero { max-width: var(--measure); margin: 1.5rem auto 3.5rem; text-align: center; }
-.hero h1 { font-size: clamp(2.1rem, 5vw, 3.1rem); font-style: italic; font-weight: 600; line-height: 1.08; margin: 0 0 .6rem; letter-spacing: .005em; }
-.hero-tagline { font-family: var(--sans); color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .18em; margin: 0 0 1rem; }
-.hero .epigraph { margin: 2rem 0 1.75rem; }
-.hero p { color: var(--text); text-align: left; margin: 0 0 1.1rem; }
+.hero { max-width: var(--measure); margin: 2.25rem auto 3.5rem; }
+.hero h1 { font-size: clamp(2.1rem, 5vw, 2.9rem); font-weight: 700; line-height: 1.1; margin: 0 0 .3rem; letter-spacing: -.005em; }
+.hero-tagline { font-family: var(--serif); font-style: italic; color: var(--muted); font-size: 1.08rem; margin: 0 0 1.4rem; }
+.masthead-rule { border: 0; border-top: 3px double var(--rule); margin: 0 0 1.9rem; }
+.hero .epigraph { margin: 1.9rem 0; }
+.hero p { color: var(--text); margin: 0 0 1.1rem; }
 
 .topic-block { border-top: 3px double var(--rule); padding-top: .9rem; margin-bottom: 3rem; }
 .topic-title {
@@ -110,7 +108,7 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; }
 .note-shell { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 3rem; align-items: start; }
 @media (max-width: 60rem) { .note-shell { grid-template-columns: 1fr; } .toc { display: none; } }
 
-.toc { position: sticky; top: 5rem; align-self: start; max-height: calc(100vh - 7rem); overflow-y: auto; }
+.toc { position: sticky; top: 2rem; align-self: start; max-height: calc(100vh - 4rem); overflow-y: auto; }
 .toc-title { font-family: var(--sans); font-size: .68rem; text-transform: uppercase; letter-spacing: .16em; color: var(--muted); margin: 0 0 .6rem; }
 .toc ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--rule-soft); }
 .toc li { margin: 0; }
