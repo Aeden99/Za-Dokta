@@ -1,7 +1,10 @@
-# Za Dokta
+# Twisted Periods
 
-Working notes on the algebraic structure of Feynman integrals & adjacent mathematical
-physics. A Jekyll site built to host a growing, cross-referenced set of Markdown notes
+> The repo keeps the name `Za-Dokta` so the GitHub Pages URL stays put; the published
+> site is titled **Twisted Periods**.
+
+Working notes on the algebraic and analytic structure of Feynman integrals and adjacent
+mathematical physics. A Jekyll site built to host a growing, cross-referenced set of Markdown notes
 with full LaTeX math (via MathJax) on GitHub Pages.
 
 ## Adding a new note
@@ -28,7 +31,7 @@ with full LaTeX math (via MathJax) on GitHub Pages.
 That's it. the home-page index, the per-note table of contents, and prev/next navigation
 are all generated automatically from the front matter and headings.
 
-## Deploying to GitHub Pages (simplest path — no local Ruby needed)
+## Deploying to GitHub Pages (simplest path, no local Ruby needed)
 
 1. Create a repo on GitHub and push this folder to it:
    ```bash
@@ -53,7 +56,7 @@ Get it wrong on a project site and the CSS will 404.
 
 ## Previewing locally (optional)
 
-Requires Ruby ≥ 3.0 (your system Ruby 2.6 is too old — use `rbenv`/`asdf` to install a
+Requires Ruby ≥ 3.0 (your system Ruby 2.6 is too old; use `rbenv`/`asdf` to install a
 newer one). Then:
 
 ```bash

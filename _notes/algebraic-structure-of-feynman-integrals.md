@@ -5,7 +5,7 @@ topic: "Feynman Integrals"
 order: 1
 date: 2026-06-23
 summary: >-
-  One substrate — the twisted (co)homology of an Euler integral — and three views on it:
+  One substrate, the twisted (co)homology of an Euler integral, and three views on it:
   Feynman integrals as twisted periods, the Landau/Euler-discriminant singular locus, and
   intersection numbers. Plus the motivic coaction and monodromy symmetries, the Hopf-algebra
   scaffolding, three anchor papers (Brown–Dupont, Matsubara-Heo, SPQR), and the open
@@ -35,7 +35,7 @@ a multivalued "twist" $$\Phi$$ times an algebraic form $$\varphi$$, over a cycle
 **Twisted connection.** $$\nabla = d + \omega\wedge$$, with
 $$\omega = d\log\Phi = \sum_j c_j \frac{dP_j}{P_j} + \sum_i \nu_i \frac{dx_i}{x_i}$$.
 The integrals are pairings of twisted cohomology $$[\varphi]\in H^n_{dR}(\nabla)$$ against
-twisted homology $$[\Gamma]\in H_n^{lf}(\nabla^\vee)$$ — i.e. **twisted periods**.
+twisted homology $$[\Gamma]\in H_n^{lf}(\nabla^\vee)$$, i.e. **twisted periods**.
 
 **Master-integral count.**
 
@@ -43,7 +43,7 @@ $$ \#\{\text{masters}\} = \dim H^n_{\mathrm{tw}} = |\chi(X)|, $$
 
 the absolute Euler characteristic of the very affine variety $$X$$ (complement of the
 zeros/poles of $$\Phi$$). By **Huh's theorem**, this signed Euler characteristic equals the
-number of critical points of $$\log\Phi$$ — the **maximum likelihood degree**, i.e. the
+number of critical points of $$\log\Phi$$: the **maximum likelihood degree**, i.e. the
 number of solutions of the likelihood equations $$d\log\Phi = 0$$.
 
 **Feynman integrals (Lee–Pomeransky).**
@@ -66,7 +66,7 @@ Master integrals = a basis of $$H^n_{\mathrm{tw}}$$; the kinematic differential 
 
 ### 2.2 The singular locus: Landau variety / PLD / Euler discriminant
 - The integral becomes singular in kinematic space $$z$$ exactly where the fiber topology
-  jumps — where $$\chi$$ **drops**.
+  jumps: where $$\chi$$ **drops**.
 - **Euler discriminant** $$\nabla_E$$: the *full* locus in $$z$$ where the signed Euler
   characteristic of the fiber drops. The complete singular locus; the fundamental modern
   object.
@@ -83,7 +83,7 @@ Master integrals = a basis of $$H^n_{\mathrm{tw}}$$; the kinematic differential 
 
 ### 2.3 Newton-polytope / region structure
 - Landau singularity **regions** correspond to **faces/facets of the Newton polytope** of
-  the (Symanzik) polynomial — the geometry behind the method of regions. Gardi–Herzog–
+  the (Symanzik) polynomial: the geometry behind the method of regions. Gardi–Herzog–
   Jones–Ma–Schlenk, *On-shell expansion: from Landau equations to the Newton polytope*
   (arXiv:2211.14845).
 - *Dissecting polytopes* (arXiv:2407.13738) distinguishes **endpoint vs pinch**
@@ -148,12 +148,12 @@ pairing written out; structure constants = intersection numbers (§2.4).
   $$m:A\otimes A\to A$$ and $$\Delta:C\to C\otimes C$$) → bialgebra (needs a braiding to make
   $$\Delta$$ an algebra map) → Hopf algebra (antipode $$S$$ = convolution-inverse of $$\mathrm{id}$$).
 - **Group-like vs primitive**:
-  - group-like $$\Delta g = g\otimes g$$ (e.g. $$g\in G$$ in $$k[G]$$) — finite symmetry;
-  - primitive $$\Delta x = x\otimes 1 + 1\otimes x$$ (e.g. $$x\in\mathfrak g$$) — infinitesimal /
+  - group-like $$\Delta g = g\otimes g$$ (e.g. $$g\in G$$ in $$k[G]$$): finite symmetry;
+  - primitive $$\Delta x = x\otimes 1 + 1\otimes x$$ (e.g. $$x\in\mathfrak g$$): infinitesimal /
     Leibniz; $$e^{tx}$$ bridges primitive → group-like.
 - **Canonical examples**:
-  - $$k[G]$$: $$\Delta g = g\otimes g$$ — tensoring representations.
-  - $$U(\mathfrak g)$$: $$\Delta x = x\otimes 1 + 1\otimes x$$ — the Leibniz rule.
+  - $$k[G]$$: $$\Delta g = g\otimes g$$, tensoring representations.
+  - $$U(\mathfrak g)$$: $$\Delta x = x\otimes 1 + 1\otimes x$$, the Leibniz rule.
   - $$\mathcal O(G)$$: commutative Hopf algebra = affine group scheme; $$\mathbb G_a$$ → primitive
     coordinate, $$\mathbb G_m$$ → group-like coordinate (the two atoms of $$\mathbb G_m\ltimes U$$).
   - Shuffle Hopf algebra (iterated integrals): coproduct = deconcatenation, product =
@@ -163,7 +163,7 @@ pairing written out; structure constants = intersection numbers (§2.4).
   recovery is via the counit, $$\sum\varepsilon(c_{(1)})c_{(2)} = c$$.
 - **Coaction sidedness**: left vs right comodule is a genuine choice. Physics convention puts
   the de Rham factor on the **right**; Brown's abstract papers often on the **left** (pure
-  convention — stay consistent).
+  convention; stay consistent).
 - Abstract home of: Connes–Kreimer renormalization Hopf algebra; Brown's **motic Hopf
   algebra** (motic subgraphs generalize CK; bigraded; grading = facets of the Feynman
   polytope; aimed at the coaction).
@@ -172,15 +172,15 @@ pairing written out; structure constants = intersection numbers (§2.4).
 
 ## 5. The Three Papers and How They Fit
 
-### 5.1 Brown–Dupont — *Lauricella hypergeometric functions, unipotent fundamental groups of the punctured Riemann sphere, and their motivic coactions* (arXiv:1907.06603)
+### 5.1 Brown–Dupont: *Lauricella hypergeometric functions, unipotent fundamental groups of the punctured Riemann sphere, and their motivic coactions* (arXiv:1907.06603)
 - Object: **Lauricella functions** $$L_\Sigma$$ (incl. Gauss $$_2F_1$$, Euler beta), as twisted
   periods on $$X_\Sigma = \mathbb{A}^1\setminus\{\sigma_0,\dots,\sigma_n\}$$, twist
   $$\prod_k(x-\sigma_k)^{s_k}$$, connection $$\nabla = d + \sum_k s_k\frac{dx}{x-\sigma_k}$$.
 - Focus: **motivic coaction** $$\Delta L^m = L^m\otimes L^{dr}$$ (global + local),
   single-valued versions, double copy; Cho–Matsumoto pairings, twisted period relations.
-- The **1-dim, hyperplane-arrangement** (Aomoto) case — the arithmetic/Galois side.
+- The **1-dim, hyperplane-arrangement** (Aomoto) case: the arithmetic/Galois side.
 
-### 5.2 Matsubara-Heo — *Hypergeometric Discriminants* (arXiv:2505.13163)
+### 5.2 Matsubara-Heo: *Hypergeometric Discriminants* (arXiv:2505.13163)
 - Object: general **Euler integrals** $$\int_\Gamma f(x;z)^{-\nu_0}x^\nu\frac{dx}{x}$$
   (Lee–Pomeransky / Feynman) on families of very affine hypersurfaces; connection
   $$\omega = -\nu_0\frac{d_xf}{f} + \sum_i\nu_i\frac{dx_i}{x_i}$$.
@@ -188,11 +188,11 @@ pairing written out; structure constants = intersection numbers (§2.4).
   singular locus of the $$D$$-module = where the integral becomes singular** (rigorous
   Euler-drop theorem). Characteristic cycle = the **hypergeometric discriminant**. Uses
   Huh's likelihood theorem; relates to the principal $$A$$-determinant; cites Fevola–Mizera–Telen.
-- The **general-dimension, single-hypersurface** (GKZ) case — the singularity side.
+- The **general-dimension, single-hypersurface** (GKZ) case: the singularity side.
 - Flags **open**: no method yet to isolate the *individual irreducible components* of the
   Euler discriminant locus; precise relation to the bifurcation locus unclear.
 
-### 5.3 Chestnov–Crisanti — **SPQR** (arXiv:2511.14875)
+### 5.3 Chestnov–Crisanti: **SPQR** (arXiv:2511.14875)
 - A Mathematica package (on FiniteFlow) for **remainder mod an ideal, elimination,
   resultants, and root-finding over finite fields**.
 - Recasts reduction as linear algebra: **Macaulay matrix** (multiply generators by
@@ -208,13 +208,13 @@ pairing written out; structure constants = intersection numbers (§2.4).
   same Cho–Matsumoto toolbox.
   - They **meet exactly at $$_2F_1$$** (and beta): the punctured-sphere
     $$\Sigma=\{0,1,y^{-1}\}$$ case = the prototypical GKZ/Euler integral.
-  - They **diverge on two axes**: (i) **dimension** — one variable vs $$n$$ variables;
-    (ii) **shape of the branch divisor** — a product of *linear* forms each with its *own*
+  - They **diverge on two axes**: (i) **dimension**: one variable vs $$n$$ variables;
+    (ii) **shape of the branch divisor**: a product of *linear* forms each with its *own*
     exponent $$s_k$$ (hyperplane arrangement / Lauricella) vs a *single general* polynomial
     $$f$$ to a *single* power $$-\nu_0$$ (GKZ / Feynman). Brown–Dupont is essentially the
     1-dim hyperplane-arrangement corner; Matsubara-Heo is the general-hypersurface
-    generalization. (Neither is literally the other's normal form — Lauricella's independent
-    exponents need the several-polynomial version — but both specialize Aomoto's
+    generalization. (Neither is literally the other's normal form, since Lauricella's independent
+    exponents need the several-polynomial version, but both specialize Aomoto's
     $$\int\prod_j P_j^{c_j}\prod_i x_i^{\nu_i}\frac{dx}{x}$$.)
   - **Punchline**: Matsubara-Heo's Euler discriminant is *exactly the locus where the twisted
     cohomology carrying Brown–Dupont's functions degenerates* (rank drops / period matrix
@@ -234,11 +234,11 @@ pairing written out; structure constants = intersection numbers (§2.4).
 ## 6. The Open Problem (concrete research target)
 
 **Setting.** Near a Landau / Euler-discriminant point one wants the **type** of the
-singularity (local analytic behavior — branch type, power, log), not just its location.
+singularity (local analytic behavior: branch type, power, log), not just its location.
 
 **Generic case (solved).** When all critical points of the relevant log-likelihood / action
 are **isolated and non-degenerate (Morse)**, there is a simple closed formula for the
-singularity type — Hannesdóttir–Mizera, *What is the iε for the S-matrix?*
+singularity type: Hannesdóttir–Mizera, *What is the iε for the S-matrix?*
 (arXiv:2204.02988), **Chapter 7, eqs. (7.12) and (7.15)**.
 
 **Open.** Generalize that formula to where its hypotheses fail:
@@ -247,8 +247,8 @@ singularity type — Hannesdóttir–Mizera, *What is the iε for the S-matrix?*
 
 A substantial advance if solved.
 
-**Mathematical framing — Picard–Lefschetz theory.** The *type* of a Landau singularity is
-governed by the local monodromy / vanishing-cycle structure of the integral — i.e. by
+**Mathematical framing: Picard–Lefschetz theory.** The *type* of a Landau singularity is
+governed by the local monodromy / vanishing-cycle structure of the integral, i.e. by
 **Picard–Lefschetz theory** (classical foundation: Pham, after Leray–Thom). In that language
 the solved generic case is exactly the **simple pinch** (one non-degenerate vanishing
 sphere); the open problem is the structure of *non-simple* / degenerate / higher-dimensional
@@ -256,7 +256,7 @@ pinches. The modern rigorous development on the Feynman side is Berghoff–Panze
 in relative Picard–Lefschetz theory* (relative monodromy and variation, localization, simple
 pinches, Landau varieties, vanishing of iterated variations), with work in progress
 (Panzer–Parisi–Gürdoğan) on the analytic structure of parametric Feynman integrals via
-Leray/Pham differential topology — the Feynman case not previously worked out in full. This
+Leray/Pham differential topology: the Feynman case not previously worked out in full. This
 program is the direct mathematical home of the singularity-type problem; the degenerate /
 positive-dimensional generalization is its natural next step, and the attack lines below are
 its refinements.
@@ -279,22 +279,22 @@ The subject has two mathematical homes, both sitting on the §1 twisted-cohomolo
 but pulling in different directions. They are linked, and the people overlap, but the
 machinery is different.
 
-**Analytic-structure / singularity side** — the home of the singularity-type problem (§6).
+**Analytic-structure / singularity side**: the home of the singularity-type problem (§6).
 Picard–Lefschetz theory of the integral: vanishing cycles, local monodromy, pinch
 singularities, the Landau variety as a stratified discriminant. Lineage: Pham / Leray / Thom
 (classical) → Berghoff–Panzer relative Picard–Lefschetz & hierarchies (arXiv:2212.06661) →
 Panzer–Parisi–Gürdoğan analytic structure (in progress); Matsubara-Heo's $$D$$-module /
 characteristic-cycle results (§5.2) sit here too. A second, computational thread on this side
-is period *evaluation* — hyperlogarithms, linear reducibility, HyperInt (Panzer,
+is period *evaluation*: hyperlogarithms, linear reducibility, HyperInt (Panzer,
 arXiv:1403.3385).
 
-**Arithmetic / period side** — the home of the coaction bridge. Motivic periods, the motivic
+**Arithmetic / period side**: the home of the coaction bridge. Motivic periods, the motivic
 coaction, the cosmic Galois group, single-valued periods, graph complexes. Lineage:
 Goncharov → Brown (mixed Tate motives over $$\mathbb{Z}$$, motivic MZVs, cosmic Galois /
 amplitude coaction, graph-complex / $$\mathrm{GL}_n(\mathbb{Z})$$ cohomology) and Brown–Dupont
 (Lauricella coaction §5.1, single-valued integration / double copy, positive geometries via
 mixed Hodge theory). This side governs *which* periods appear and their Galois action, not
-the *local* singularity type — so it is largely orthogonal to the §6 problem, while being the
+the *local* singularity type, so it is largely orthogonal to the §6 problem, while being the
 deeper arithmetic of the same objects.
 
 **Link.** The two sides meet on the substrate (§1) and in people: Brown is thanked in the PLD
@@ -312,13 +312,13 @@ The §6 problem lives on the analytic-structure side; the coaction is its horizo
 - Matsubara-Heo, Mizera, Telen, *Four Lectures on Euler Integrals*, arXiv:2306.13578.
 - Agostini, Fevola, Sattelberger, Telen, *Vector Spaces of Generalized Euler Integrals*,
   arXiv:2208.08967.
-- Huh — maximum likelihood degree / Euler characteristic of a very affine variety.
+- Huh: maximum likelihood degree / Euler characteristic of a very affine variety.
 
 **Intersection numbers**
-- Cho–Matsumoto (1995) — intersection theory for twisted cohomology, period relations.
+- Cho–Matsumoto (1995): intersection theory for twisted cohomology, period relations.
 - Mastrolia–Mizera, *Feynman Integrals and Intersection Theory*, arXiv:1810.03818.
 - Frellesvig–Gasparotto–Mandal–Mastrolia–Mattiazzi–Mizera, arXiv:1907.02000
-  (+ JHEP follow-ups) — multivariate recursion.
+  (+ JHEP follow-ups): multivariate recursion.
 
 **Landau / PLD / Euler discriminant**
 - Mizera–Telen, *Landau Discriminants*, JHEP 08 (2022) 200.
@@ -339,27 +339,27 @@ The §6 problem lives on the analytic-structure side; the coaction is its horizo
 - Brown, *Feynman amplitudes, coaction principle, and the cosmic Galois group* /
   *Notes on motivic periods*, CNTP 11(3) (2017), arXiv:1512.06409; *Mixed Tate motives over*
   $$\mathbb{Z}$$, Ann. of Math. 175 (2012).
-- Brown (with Hu, Panzer) — graph complexes and unstable cohomology of
+- Brown (with Hu, Panzer): graph complexes and unstable cohomology of
   $$\mathrm{GL}_n(\mathbb{Z})$$ (the arithmetic-side program adjacent to Feynman periods).
-- Abreu–Britto–Duhr–Gardi — diagrammatic coaction (one- and two-loop).
-- Bloch–Kreimer — Cutkosky rules, Landau singularities and Hopf structure (adjacent bridge).
-- Goncharov; Brown — motivic periods / cosmic Galois group.
+- Abreu–Britto–Duhr–Gardi: diagrammatic coaction (one- and two-loop).
+- Bloch–Kreimer: Cutkosky rules, Landau singularities and Hopf structure (adjacent bridge).
+- Goncharov and Brown: motivic periods / cosmic Galois group.
 
 **Computational algebra**
 - Chestnov–Crisanti, *SPQR*, arXiv:2511.14875 (Chestnov–Crisanti–Giroux follow-up forthcoming).
 
 **Monodromy / Picard–Lefschetz / singularity type**
 - Pham, *Singularities of Integrals: Homology, Hyperfunctions and Microlocal Analysis* (and
-  the classical Leray–Thom–Pham vanishing-cycle theory) — classical foundation for the type
+  the classical Leray–Thom–Pham vanishing-cycle theory); classical foundation for the type
   of a Landau singularity.
 - Berghoff–Panzer, *Hierarchies in relative Picard–Lefschetz theory*, arXiv:2212.06661
-  (J. Geom. Phys. 216 (2025) 105539) — relative monodromy, simple pinches; the degenerate
+  (J. Geom. Phys. 216 (2025) 105539): relative monodromy, simple pinches; the degenerate
   frontier.
-- Panzer–Parisi–Gürdoğan — analytic structure of parametric Feynman integrals via Leray/Pham
+- Panzer–Parisi–Gürdoğan: analytic structure of parametric Feynman integrals via Leray/Pham
   differential topology (work in progress).
 - Hannesdóttir–Mizera, *What is the iε for the S-matrix?*, SpringerBriefs in Physics (2023),
-  arXiv:2204.02988 — Ch. 7: singularity types, eqs. (7.12)/(7.15).
+  arXiv:2204.02988; Ch. 7: singularity types, eqs. (7.12)/(7.15).
 - *Sequential Discontinuities ... and the Monodromy Group*, arXiv:2007.13747.
 - Panzer, *Feynman integrals and hyperlogarithms* (thesis, arXiv:1506.07243); *Algorithms for
-  the symbolic integration of hyperlogarithms* (HyperInt), arXiv:1403.3385 — period-evaluation
+  the symbolic integration of hyperlogarithms* (HyperInt), arXiv:1403.3385; the period-evaluation
   thread.

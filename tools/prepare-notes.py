@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-prepare-notes.py — make Markdown notes render correctly under kramdown + MathJax.
+prepare-notes.py: make Markdown notes render correctly under kramdown + MathJax.
 
 Why this exists
 ---------------
 GitHub Pages renders Markdown with kramdown (GFM). With kramdown's math engine ON
-(our config), it protects `$$...$$` math from being mangled — but it does NOT treat
+(our config), it protects `$$...$$` math from being mangled, but it does NOT treat
 single-dollar `$...$` as math. Left alone, inline `$x_i$` gets eaten by Markdown:
 underscores become <em>, `|` turns lines into tables, `\#`/`\{` lose their backslash.
 
@@ -41,7 +41,7 @@ def split_front_matter(text):
 
 
 def _is_display_open(line):
-    """True if `line` opens a display equation — either at column 0 or indented inside a
+    """True if `line` opens a display equation, either at column 0 or indented inside a
     list. The line's content (ignoring leading whitespace) must start with `$$` and be the
     *whole* equation: a multi-line opener, or a single line whose closing `$$` is trailed
     only by whitespace. The trailing-whitespace rule keeps the pass idempotent and avoids
@@ -60,7 +60,7 @@ def separate_display_blocks(body):
     """Ensure a blank line before/after every top-level `$$ ... $$` block.
 
     A *top-level* display block is one whose opening `$$` is at column 0 (not indented
-    inside a list) AND that is the whole equation — i.e. either it spans multiple lines,
+    inside a list) AND that is the whole equation, i.e. either it spans multiple lines,
     or its closing `$$` is followed by nothing but whitespace. This second condition is
     what makes the pass idempotent: inline math that happens to start a line (e.g.
     `$$\omega = ...$$.`) has trailing prose after its close, so it is left as inline.

@@ -8,14 +8,27 @@ permalink: /about/
 
 # About
 
-**Za Dokta** is a personal, evolving set of working notes on the algebraic structure of
-Feynman integrals and the mathematical physics around them — twisted cohomology and Euler
-integrals, Landau / Euler-discriminant singularities, intersection numbers, the motivic
-coaction and cosmic Galois group, and the Picard–Lefschetz analytic-structure program.
+**Twisted Periods** is a personal, evolving set of working notes on the algebraic and
+analytic structure of Feynman integrals: twisted cohomology and Euler integrals, Landau
+and Euler-discriminant singularities, intersection numbers, hyperlogarithms, the motivic
+coaction and cosmic Galois group, and the Picard–Lefschetz program for the analytic
+structure of amplitudes.
+
+The name is the thesis. Everything on this site is a view on one object, the twisted
+(co)homology of an Euler integral, whose pairings are twisted periods. Feynman integrals
+are the special case the whole picture is built around.
 
 The notes are written for myself first: dense, cross-referenced, and aimed at holding the
 whole picture in one place. Math is typeset with MathJax, so everything renders the way it
 reads in the source `$\TeX$`.
+
+### Where this is heading
+
+The concrete target is the singularity-type problem: near a point of the Landau / Euler
+discriminant, determine the local analytic behavior of the integral (branch type, power,
+log), not just its location. The Morse case is solved; the degenerate and
+positive-dimensional cases are open. The notes build background for an attack through
+relative Picard–Lefschetz theory. *The Reading Program* note tracks the path.
 
 ### How this site is organised
 

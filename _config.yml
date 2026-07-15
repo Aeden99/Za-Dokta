@@ -1,14 +1,15 @@
 # --- Site ---------------------------------------------------------------------
-title: "Za Dokta"
-tagline: "Working notes on the algebraic structure of Feynman integrals & adjacent mathematical physics"
+title: "Twisted Periods"
+tagline: "Working notes on the algebraic and analytic structure of Feynman integrals"
 description: >-
-  A growing, comprehensive set of working notes on Feynman integrals — twisted
-  cohomology, Euler/Landau discriminants, intersection numbers, the motivic
-  coaction, and the analytic structure of amplitudes.
+  A growing set of working notes on Feynman integrals as twisted periods:
+  twisted cohomology, Euler and Landau discriminants, intersection numbers,
+  hyperlogarithms, the motivic coaction, Picard–Lefschetz theory, and the
+  analytic structure of amplitudes.
 author: "Devansh"
 lang: en
 
-# IMPORTANT — hosting URL.
+# IMPORTANT: hosting URL.
 #   • User/org site  (repo named <username>.github.io)  ->  leave baseurl: ""
 #   • Project site   (repo named e.g. za-dokta)         ->  baseurl: "/za-dokta"
 # Every link/asset uses the relative_url filter, so this is the ONLY line to change.
