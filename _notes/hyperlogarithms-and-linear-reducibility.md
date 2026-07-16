@@ -1,6 +1,5 @@
 ---
 title: "Hyperlogarithms and Linear Reducibility"
-subtitle: "Working Notes"
 topic: "Periods and Evaluation"
 order: 2
 date: 2026-07-15
@@ -87,12 +86,12 @@ alphabet $$\{-1,0,1\}$$; MZVs = (shuffle-regularized) values at $$z = 1$$.
   (regularized) limits at the letters via shuffle regularization. The thesis
   (arXiv:1506.07243) is the full theory plus the zoo of applications: massless propagator
   and vertex integrals at high loop order among them.
-- The same machinery feeds the **Panzer–Schnetz census of $$\phi^4$$ periods**
+- Together with Schnetz's graphical functions, this feeds the **Panzer–Schnetz census of $$\phi^4$$ periods**
   (arXiv:1603.04289), which verified the **coaction principle** empirically on a large
   scale: Galois conjugates of periods that occur in $$\phi^4$$ occur there too. That closes
   the circle back to the motivic side (§3 of the algebraic-structure note).
-- Adjacent evaluation technology in the same spirit: Schnetz's graphical functions and
-  single-valued hyperlogarithms.
+- Close cousins in the same spirit: single-valued hyperlogarithms and the position-space
+  graphical-function calculus.
 
 ---
 

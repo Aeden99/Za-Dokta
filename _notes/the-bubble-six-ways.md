@@ -96,7 +96,8 @@ algebraic-structure note) in action:
 - generic $$(s, m_1^2, m_2^2)$$: $$\;3$$ masters;
 - one mass to zero: $$\;2$$ (that tadpole degenerates);
 - both masses to zero: $$\;1$$ (the massless bubble);
-- on $$\lambda = 0$$ at generic masses: the fiber topology jumps: this *is* the threshold.
+- on $$\lambda = 0$$ at generic masses: the fiber topology jumps: these *are* the normal
+  and pseudo-thresholds.
 
 Every drop is a component of the Euler discriminant; nothing else is.
 
@@ -165,9 +166,15 @@ Below threshold the same function is arcsin-type: with $$z = s/4m^2$$,
 
 $$ {}_2F_1\!\left(1,1;\tfrac32; z\right) = \frac{\arcsin\sqrt{z}}{\sqrt{z}\sqrt{1-z}}, $$
 
-and the all-order-in-$$\varepsilon$$ bubble is a Gauss $$_2F_1$$ with third parameter $$3/2$$ in
-$$z$$ (the $$\varepsilon$$-dependence sits in the upper parameters; Mellin–Barnes gets you
-there in three lines). So the bubble is the punctured-sphere case
+and the all-order-in-$$\varepsilon$$ bubble closes in one line (Mellin–Barnes, or the GKZ
+system directly):
+
+$$ I(s) \;=\; \Gamma(\varepsilon)\,(m^2)^{-\varepsilon}\;
+   {}_2F_1\!\left(1,\,\varepsilon;\,\tfrac32;\,z\right), $$
+
+returning the tadpole at $$z = 0$$, generating the $$\beta \log w$$ tower order by order
+in $$\varepsilon$$, and carrying the threshold exponent $$\tfrac12 - \varepsilon$$ in the
+$$(1-z)^{c-a-b}$$ of Gauss. So the bubble is the punctured-sphere case
 $$\Sigma = \{0, 1, z^{-1}\}$$: **the meeting point of Brown–Dupont and Matsubara-Heo
 promised in §5.4 of the algebraic-structure note, realized in the first physical
 integral.** Its coaction is the Lauricella story; its Euler discriminant is

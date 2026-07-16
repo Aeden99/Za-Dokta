@@ -1,6 +1,5 @@
 ---
 title: "Algebraic Structure of Feynman Integrals"
-subtitle: "Working Notes"
 topic: "Feynman Integrals"
 order: 1
 date: 2026-06-23

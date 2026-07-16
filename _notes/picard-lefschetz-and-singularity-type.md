@@ -1,6 +1,5 @@
 ---
 title: "Picard–Lefschetz and the Type of a Landau Singularity"
-subtitle: "Working Notes"
 topic: "Singularities and Monodromy"
 order: 3
 date: 2026-07-15
@@ -105,8 +104,8 @@ orthant / simplex, with boundary on the coordinate divisors. So the homology is
   topology.
 - **Berghoff–Panzer, *Hierarchies in relative Picard–Lefschetz theory*
   (arXiv:2212.06661)**: the rigorous development: relative monodromy and variation,
-  localization of the variation on the pinched stratum, vanishing of iterated variations,
-  and a complete treatment of simple pinches. Base camp for anything beyond.
+  localization of the variation on the pinched stratum, vanishing theorems for iterated
+  variations, and a complete treatment of simple pinches. Base camp for anything beyond.
 - In progress (Panzer–Parisi–Gürdoğan): the full analytic structure of parametric Feynman
   integrals via Leray/Pham differential topology: the Feynman case in full has never been
   written down. These notes are pointed at exactly this program.

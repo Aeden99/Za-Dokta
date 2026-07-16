@@ -46,8 +46,8 @@ localize.
 
 **Berghoff–Panzer, *Hierarchies in relative Picard–Lefschetz theory* (arXiv:2212.06661).**
 The upgrade the Feynman case actually needs: relative (co)homology because the cycle has
-boundary, hierarchies of Landau varieties, localization of variation, vanishing of
-iterated variations, simple pinches done completely. Extract: exactly which hypotheses
+boundary, hierarchies of Landau varieties, localization of variation, vanishing theorems
+for iterated variations, simple pinches done completely. Extract: exactly which hypotheses
 confine the results to simple pinches; those are the walls the open problem lives behind.
 The program in progress behind it (Panzer–Parisi–Gürdoğan: Leray/Pham differential
 topology for parametric Feynman integrals) is the frame these notes want to be useful
