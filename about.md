@@ -14,9 +14,9 @@ and Euler-discriminant singularities, intersection numbers, hyperlogarithms, the
 coaction and cosmic Galois group, and the Picard–Lefschetz program for the analytic
 structure of amplitudes.
 
-The name is the thesis. Everything on this site is a view on one object, the twisted
-(co)homology of an Euler integral, whose pairings are twisted periods. Feynman integrals
-are the special case the whole picture is built around.
+The name is literal: everything here is a view on one object, the twisted (co)homology
+of an Euler integral, and its pairings are twisted periods. Feynman integrals are the
+special case I actually care about.
 
 The notes are written for myself first: dense, cross-referenced, and aimed at holding the
 whole picture in one place. Math is typeset with MathJax, so everything renders the way it
@@ -30,7 +30,7 @@ log), not just its location. The Morse case is solved; the degenerate and
 positive-dimensional cases are open. The notes build background for an attack through
 relative Picard–Lefschetz theory.
 [The Reading Program]({{ '/notes/the-reading-program/' | relative_url }}) tracks the path;
-[The Bubble, Six Ways]({{ '/notes/the-bubble-six-ways/' | relative_url }}) and
+[The Bubble, Exactly]({{ '/notes/the-bubble-six-ways/' | relative_url }}) and
 [The Triangle and the Anomalous Threshold]({{ '/notes/the-triangle-and-the-anomalous-threshold/' | relative_url }})
 show the toolkit running on the smallest examples.
 

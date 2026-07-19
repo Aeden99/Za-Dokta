@@ -12,7 +12,7 @@ summary: >-
 tags: [triangle, anomalous-threshold, landau-singularities, cayley-determinant, relative-homology, worked-example]
 ---
 
-## 0. Why the Triangle
+## 0. Orientation
 
 The [bubble]({{ '/notes/the-bubble-six-ways/' | relative_url }}) is one variable, one
 interior pinch, weight one: every structure visible, none of them entangled. The triangle
@@ -43,7 +43,7 @@ $$\det A = 4m_1^2 m_2^2 - Y_{12}^2 = -\lambda$$.)
 
 ---
 
-## 2. One Formula, Both Discriminants
+## 2. The critical value: both discriminants in one ratio
 
 Minimize $$F$$ on the simplex $$\sum_i x_i = 1$$ (Lagrange, three lines): the critical point
 and critical value are
@@ -59,8 +59,7 @@ $$ x_* \;=\; \frac{A^{-1}\mathbf 1}{\mathbf 1^{\mathsf T} A^{-1}\mathbf 1}, \qqu
   independent external momenta; when it vanishes the critical point escapes to infinity:
   the **second-type** singularity.
 - Bubble check: $$\mathbf 1^{\mathsf T}\operatorname{adj}(A)\,\mathbf 1 = 2s$$, so
-  $$F_* = -\lambda/4s$$: exactly §2 of the bubble note. One ratio of determinants carries
-  the whole one-loop singularity structure.
+  $$F_* = -\lambda/4s$$: exactly §2 of the bubble note.
 
 ---
 
@@ -127,7 +126,7 @@ $$ \int_{\mathbb R^2}\! d^2u\, \left(u^{\mathsf T} Q\, u + a\right)^{d/2-3}
 
 so the singular part of the triangle goes like $$(s_a - s)^{(d-4)/2}$$: exponent zero at
 $$d = 4$$, the degenerate-exponent case where the power law turns into
-$$\log(s_a - s)$$. Pattern worth remembering: the leading singularity of the one-loop
+$$\log(s_a - s)$$. Pattern: the leading singularity of the one-loop
 $$n$$-gon carries exponent $$(d - n - 1)/2$$ (bubble: $$1/2$$; triangle: $$0$$; box: $$-1/2$$).
 Constants and the $$i\varepsilon$$ routing: Hannesdóttir–Mizera, eqs. (7.12)/(7.15), as
 always. The maximal cut is algebraic, $$\propto 1/\sqrt{|\det A|}$$: the same Cayley
@@ -135,15 +134,14 @@ determinant again.
 
 ---
 
-## 6. The Collision, and Why It Matters
+## 6. The collision (where the Morse case ends)
 
 As $$M^2 \to 2m^2$$ from above, $$s_a \to 4m^2$$: the anomalous threshold runs into the
 normal threshold. At the merge point the interior critical point collides with an edge
 critical point, *across strata*; the Landau points stop being isolated and in general
 position, the Morse / simple-pinch hypotheses fail, and eqs. (7.12)/(7.15) no longer
-apply as stated. This is the open problem of §6 of the algebraic-structure note sitting
-inside the simplest vertex function: not exotic, not higher loop, just two Landau
-singularities colliding in the triangle.
+apply as stated. This is the open problem of §6 of the algebraic-structure note, sitting
+inside the simplest vertex function.
 
 ---
 

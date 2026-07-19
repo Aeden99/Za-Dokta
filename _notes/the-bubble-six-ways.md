@@ -1,5 +1,5 @@
 ---
-title: "The Bubble, Six Ways"
+title: "The Bubble, Exactly"
 subtitle: "One integral through every lens on this site"
 topic: "Worked Examples"
 order: 5
@@ -13,7 +13,7 @@ summary: >-
 tags: [worked-example, bubble, landau-equations, kallen, thresholds, cutkosky]
 ---
 
-## 0. Why the Bubble
+## 0. Orientation
 
 The smallest Feynman integral on which *every* structure discussed on this site is visible
 and computable by hand. Conventions: masses $$m_1, m_2$$, external invariant $$s = p^2$$,
@@ -90,7 +90,7 @@ critical-point picture (§1 of the algebraic-structure note), in one line.
 With generic exponents, the critical-point equations $$d\log\Phi = 0$$ on
 $$(\mathbb{C}^\times)^2 \smallsetminus \{\mathcal{G}=0\}$$ have $$|\chi| = 3$$ solutions:
 three master integrals, and indeed the IBP basis is the bubble plus the two tadpoles.
-Now watch $$\chi$$ drop, which is the Euler-discriminant criterion (§2.2 of the
+The drops of $$\chi$$ are the Euler-discriminant criterion (§2.2 of the
 algebraic-structure note) in action:
 
 - generic $$(s, m_1^2, m_2^2)$$: $$\;3$$ masters;
@@ -180,11 +180,11 @@ promised in §5.4 of the algebraic-structure note, realized in the first physica
 integral.** Its coaction is the Lauricella story; its Euler discriminant is
 $$\{\lambda = 0\} \cup \{s = 0\}$$, computed above by hand; the
 [hyperlogarithm note]({{ '/notes/hyperlogarithms-and-linear-reducibility/' | relative_url }})'s
-machinery is overkill here (weight one), which is exactly why the example is clean.
+machinery is overkill here (weight one).
 
 ---
 
-## 7. What the Bubble Cannot Teach
+## 7. What the bubble cannot host
 
 Everything above is Morse, simple-pinch, weight one, algebraic-letter. The open problems
 of §6 of the algebraic-structure note begin where the bubble ends: degenerate critical

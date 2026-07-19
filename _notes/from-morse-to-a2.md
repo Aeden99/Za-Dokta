@@ -8,12 +8,12 @@ summary: >-
   First working steps on the open problem. The Morse master integral and the Landau
   exponent re-derived; bulk versus boundary bookkeeping with the massless-bubble
   collision as the test; then A₂ end to end: cube-root masters, the exponent drop by one
-  sixth, order-3 monodromy, the miniversal unfolding as the true meaning of "type", the
-  weight law unifying direction-dependent exponents, and where interior A₂ points live.
+  sixth, order-3 monodromy, the miniversal unfolding as what "type" means, the weight
+  law unifying direction-dependent exponents, and where interior A₂ points live.
 tags: [a2-singularity, degenerate-pinch, threshold-expansions, unfolding, landau-exponents, stokes]
 ---
 
-**Status.** This note crosses from organizing the literature into working the problem
+**Status.** Working notes on the open problem itself
 (§6 of the [algebraic-structure note]({{ '/notes/algebraic-structure-of-feynman-integrals/' | relative_url }}),
 §5 of the [Picard–Lefschetz note]({{ '/notes/picard-lefschetz-and-singularity-type/' | relative_url }})).
 Every derivation below is self-contained and internally checked; three checks against
@@ -27,7 +27,7 @@ to the imaginary part are tracked.
 
 ---
 
-## 1. The Bubble as Saddle Data
+## 1. The bubble as saddle data
 
 The [bubble note]({{ '/notes/the-bubble-six-ways/' | relative_url }}) has the full
 six-way treatment; here only the saddle data, in the form everything below generalizes
@@ -53,7 +53,7 @@ $$x_* \in (0,1)$$.
 
 ---
 
-## 2. The Morse Master: Where the Square Root Comes From
+## 2. Morse fluctuation: where the square root comes from
 
 $$\mathcal V$$ is exactly quadratic, so the saddle expansion is exact:
 $$\Delta(x) = \Delta_* + s\,(x - x_*)^2$$. Endpoint regions contribute functions analytic
@@ -65,8 +65,8 @@ $$ \boxed{\;\int_{\mathbb R} d\delta\,\big[A + s\,\delta^2\big]^{\nu}
    \;=\; A^{\nu+\frac12}\, s^{-\frac12}\,
    \frac{\sqrt{\pi}\,\Gamma(-\nu-\tfrac12)}{\Gamma(-\nu)}\;} $$
 
-**Each nondegenerate transverse direction contributes $$+\tfrac12$$ to the exponent of the
-distance function.** The parametric prefactor $$\Gamma(2-D/2)$$ cancels against
+Each nondegenerate transverse direction contributes $$+\tfrac12$$ to the exponent of the
+distance function. The parametric prefactor $$\Gamma(2-D/2)$$ cancels against
 $$\Gamma(-\nu)$$, leaving
 
 $$ I_{\rm sing}(s) \;\propto\; \sqrt{\pi}\;\Gamma\!\left(\tfrac{3-D}{2}\right)
@@ -84,7 +84,7 @@ dichotomy of HM (7.12)/(7.15) **(to check: numbering)**.
 
 ---
 
-## 3. General Morse Bookkeeping: the Landau Exponent Re-derived
+## 3. General Morse bookkeeping: the Landau exponent re-derived
 
 Parametric representation, $$n$$ propagators, $$\ell$$ loops: singular factor
 $$\mathcal V^{\,\ell D/2 - n}$$ near an interior saddle ($$\mathcal U$$ analytic and nonzero
@@ -113,14 +113,15 @@ bookkeeping **(to check)**.
 **Check ✓ (massless bubble as a boundary collision).** As $$m_2 \to 0$$, the thresholds
 $$s_\pm$$ collide at $$m_1^2$$ and $$x_* \to 0$$: the bulk saddle migrates to the boundary.
 With $$b = 1$$: $$\gamma = \tfrac12 + \tfrac12 = 1$$, integer, hence
-$$(s - m_1^2)\log(m_1^2 - s)$$: exactly the known $$B_0(s; m, 0)$$ in $$D = 4$$. Colliding
-thresholds of this kind are a *boundary* collision (exponent $$\tfrac12 \to 1$$, log
-appears); the anomalous-normal collision in the triangle note is the same mechanism.
-The interior collision is a different animal: that is A₂, next.
+$$(s - m_1^2)\log(m_1^2 - s)$$: exactly the known $$B_0(s; m, 0)$$ in $$D = 4$$. The
+colliding-thresholds degeneration here is a *boundary* collision (exponent
+$$\tfrac12 \to 1$$ with log), distinct from the interior A₂ below; the anomalous-normal
+collision in the triangle note is the same boundary mechanism. Both mechanisms must
+appear in any generalized formula.
 
 ---
 
-## 4. A₂ End to End
+## 4. The A₂ direction: cubic saddle, end to end
 
 **Local model.** At a Landau point let the Hessian of $$\mathcal V$$ have corank 1 (one
 flat direction $$\delta$$) with nonvanishing cubic term along it, the remaining $$n-2$$
@@ -172,7 +173,7 @@ kinematic perturbation is the split itself: §5.
 
 ---
 
-## 5. Direction Dependence: the Unfolding Is the Type
+## 5. Direction dependence: the unfolding is the type
 
 The miniversal unfolding of A₂,
 
@@ -211,7 +212,7 @@ the singularity lives in the Stokes structure (thimble wall-crossing at
 $$\arg a = 0, \pm\tfrac{2\pi}3$$), not in a branch point (a clean recent case study:
 arXiv:2605.08867).
 
-**Conclusion: the precise shape of the open problem.** At a degenerate Landau point the
+**Conclusion (the precise statement of the open problem's shape).** At a degenerate Landau point the
 "type" is not one exponent. It is the germ of the unfolding: a stratified object over
 the pulled-back discriminant, with per-stratum exponents governed by the weight law and
 gluing/Stokes data across walls. Any generalization of (7.12)/(7.15) must be a formula
@@ -219,11 +220,11 @@ gluing/Stokes data across walls. Any generalization of (7.12)/(7.15) must be a f
 
 ---
 
-## 6. Where Interior A₂ Actually Lives
+## 6. Where A₂ actually lives (and why the bubble cannot host it)
 
-Not in the bubble: $$\mathcal V_{\rm bubble}$$ is exactly quadratic in the single simplex
-variable with coefficient $$-s \neq 0$$, so only A₁ is possible in the interior; the
-bubble's degenerations are boundary collisions (§3). A genuine interior A₂ needs at
+$$\mathcal V_{\rm bubble}$$ is exactly quadratic in the single simplex variable with
+coefficient $$-s \neq 0$$: only A₁ is possible in the interior, and the bubble's
+degenerations are boundary collisions (§3). A genuine interior A₂ needs at
 least two simplex directions plus one kinematic tuning to kill a Hessian eigenvalue:
 the two-loop geometries where BP record the failure of the simple-pinch hypotheses, the
 **massless triangle** and the **ice-cream cone** (named in the BP abstract), plus the
@@ -243,7 +244,7 @@ sunrise of their worked sections **(to check: section numbers)**.
 
 ---
 
-## 7. HM ↔ BP Dictionary
+## 7. HM ↔ BP dictionary
 
 | HM (parametric / physics) | BP (relative Picard–Lefschetz) | status |
 |---|---|---|
@@ -260,7 +261,7 @@ sunrise of their worked sections **(to check: section numbers)**.
 
 ---
 
-## 8. The M Question
+## 8. The M question, framed
 
 **Certain** (search-verified): Pham, *Formules de Picard–Lefschetz généralisées et
 ramification des intégrales*, Bull. SMF 93 (1965), completely determines the vanishing
@@ -274,7 +275,7 @@ decomposes against the vanishing cells; that integer intersection data is the na
 candidate for the undetermined matrix in their generalized formula **(to check against
 BP §3.9 before treating as fact)**.
 
-The earned question, once checked: Pham '65 fixes local monodromy for A$$_k$$; the
+Raw material for the earned question: Pham '65 fixes local monodromy for A$$_k$$; the
 residual freedom appears to be exactly the relative intersection data; computing it
 explicitly for low A$$_k$$ in the massless-triangle / ice-cream-cone / sunrise
 geometries, combined with the per-stratum expansions of §4 and §5, would upgrade the
@@ -286,7 +287,7 @@ the identified missing piece.
 
 ---
 
-## 9. Standing Checks
+## 9. Verification checklist
 
 1. HM numbering: confirm (7.12)/(7.15) are bulk/boundary and align §2 and §3 with their
    exact prefactors.

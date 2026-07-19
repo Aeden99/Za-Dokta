@@ -19,7 +19,7 @@ target: the singularity-type problem (§6 of the
 [algebraic-structure note]({{ '/notes/algebraic-structure-of-feynman-integrals/' | relative_url }})).
 This page is the program itself: what to read, in what order, and what each item is
 *for*. Kept current as the notes grow. The whole toolkit, run end-to-end on the smallest
-example: [The Bubble, Six Ways]({{ '/notes/the-bubble-six-ways/' | relative_url }});
+example: [The Bubble, Exactly]({{ '/notes/the-bubble-six-ways/' | relative_url }});
 continued to the first stratified case in
 [The Triangle and the Anomalous Threshold]({{ '/notes/the-triangle-and-the-anomalous-threshold/' | relative_url }}).
 
@@ -50,7 +50,7 @@ localize.
 The upgrade the Feynman case actually needs: relative (co)homology because the cycle has
 boundary, hierarchies of Landau varieties, localization of variation, vanishing theorems
 for iterated variations, simple pinches done completely. Extract: exactly which hypotheses
-confine the results to simple pinches; those are the walls the open problem lives behind.
+confine the results to simple pinches; their failure is where the open problem starts.
 The program in progress behind it (Panzer–Parisi–Gürdoğan: Leray/Pham differential
 topology for parametric Feynman integrals) is the frame these notes want to be useful
 for. Worked material in the
@@ -71,8 +71,8 @@ the input the local analysis needs.
 **Panzer–Schnetz** (arXiv:1603.04289) for the coaction census. Hyperlogarithms and linear
 reducibility, worked through in the
 [dedicated note]({{ '/notes/hyperlogarithms-and-linear-reducibility/' | relative_url }}).
-Extract: explicit periods and explicit monodromy: the laboratory where any conjectured
-type formula gets tested.
+Extract: explicit periods and explicit monodromy, the material any conjectured type
+formula has to reproduce.
 
 ## 6. The Arithmetic Horizon
 

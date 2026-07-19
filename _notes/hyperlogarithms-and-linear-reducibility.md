@@ -7,7 +7,7 @@ summary: >-
   The evaluation thread: hyperlogarithms as the concrete shuffle algebra of iterated
   integrals, parametric (Fubini) integration of Feynman integrals, Brown's polynomial
   reduction and the linear-reducibility criterion, HyperInt and the Panzer–Schnetz
-  coaction census, and the Calabi–Yau wall where the polylogarithmic world ends.
+  coaction census, and the Calabi–Yau wall.
 tags: [hyperlogarithms, polylogarithms, linear-reducibility, parametric-integration, hyperint, periods]
 ---
 
@@ -69,7 +69,7 @@ alphabet $$\{-1,0,1\}$$; MZVs = (shuffle-regularized) values at $$z = 1$$.
   the reduction stays linear, the graph is certified linearly reducible and the integral
   lands in hyperlogarithms; for the classical massless families the letters collapse to
   rational points and the periods are MZVs (or alternating / cyclotomic sums).
-- Caveats, in the order people trip on them:
+- Caveats:
   1. *Sufficient, not necessary*: reducibility is representation-dependent; a change of
      variables (cross-ratios, dual/conformal variables) can restore it.
   2. The reduction bound can overshoot: it certifies, it does not forbid.
@@ -79,7 +79,7 @@ alphabet $$\{-1,0,1\}$$; MZVs = (shuffle-regularized) values at $$z = 1$$.
 
 ---
 
-## 3. HyperInt and What This Machinery Computed
+## 3. HyperInt, and what it computed
 
 - Panzer, *Algorithms for the symbolic integration of hyperlogarithms* (HyperInt,
   arXiv:1403.3385): Maple implementation of polynomial reduction, primitives, and
@@ -90,12 +90,11 @@ alphabet $$\{-1,0,1\}$$; MZVs = (shuffle-regularized) values at $$z = 1$$.
   (arXiv:1603.04289), which verified the **coaction principle** empirically on a large
   scale: Galois conjugates of periods that occur in $$\phi^4$$ occur there too. That closes
   the circle back to the motivic side (§3 of the algebraic-structure note).
-- Close cousins in the same spirit: single-valued hyperlogarithms and the position-space
-  graphical-function calculus.
+- Adjacent: single-valued hyperlogarithms, and graphical functions in position space.
 
 ---
 
-## 4. The Wall: Where Polylogarithms End
+## 4. Where the polylogarithms end
 
 - The failure signal is an **irreducible non-linear polynomial** (a quadric or worse) in
   the reduction that no ordering and no obvious change of variables linearizes.
@@ -109,7 +108,7 @@ alphabet $$\{-1,0,1\}$$; MZVs = (shuffle-regularized) values at $$z = 1$$.
 
 ---
 
-## 5. Why This Thread Matters for the Singularity-Type Problem
+## 5. Back to the singularity-type problem
 
 - The polynomials tracked by polynomial reduction are discriminant-type loci: they record
   where the fiber degenerates as parameters are integrated out one at a time. Same
@@ -120,8 +119,7 @@ alphabet $$\{-1,0,1\}$$; MZVs = (shuffle-regularized) values at $$z = 1$$.
   branch points can sit, and the symbol alphabet is a global shadow of the Landau locus.
 - So the evaluation thread is not a detour from the type problem
   (see the [Picard–Lefschetz note]({{ '/notes/picard-lefschetz-and-singularity-type/' | relative_url }})):
-  it is the laboratory. Explicit functions are where conjectured local exponents get
-  checked.
+  it is where a conjectured local exponent gets checked against an explicit function.
 
 ---
 

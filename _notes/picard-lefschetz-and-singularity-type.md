@@ -16,9 +16,9 @@ tags: [picard-lefschetz, vanishing-cycles, monodromy, landau-singularities, miln
 The [algebraic-structure note]({{ '/notes/algebraic-structure-of-feynman-integrals/' | relative_url }})
 poses the singularity-type problem (§6 there): near a point of the Landau /
 Euler-discriminant locus, determine the *local analytic behavior* of the integral, not
-just where it sits. This note is the local toolbox for that problem. One-sentence version:
-**the type of a Landau singularity is the local monodromy of a family of cycles, and
-Picard–Lefschetz theory is the machine that computes local monodromy.**
+just where it sits. This note is the local toolbox: the type of a Landau singularity *is*
+the local monodromy of a family of cycles, and Picard–Lefschetz theory is what computes
+local monodromy.
 
 ---
 
@@ -47,7 +47,7 @@ $$ \gamma \;\longmapsto\; \gamma \pm \langle \gamma, \delta \rangle\, \delta, $$
   with $$\langle\,,\rangle$$ the intersection pairing on the fiber. The sign and the
   (skew)symmetry of the pairing depend on $$n \bmod 4$$, and conventions differ across
   sources (cf. the coaction-sidedness situation, §4 of the algebraic-structure note): fix
-  one book and stay consistent. AGV II is the reliable arbiter.
+  one book (AGV II) and stay consistent.
 - **Variation map** $$\mathrm{var} : H_{n-1}(F, \partial F) \to H_{n-1}(F)$$: "after minus
   before" for the monodromy, well defined because the monodromy is the identity near
   $$\partial F$$. This is the object that survives in the relative setting; iterated
@@ -57,13 +57,13 @@ $$ \gamma \;\longmapsto\; \gamma \pm \langle \gamma, \delta \rangle\, \delta, $$
 
 ---
 
-## 3. What "Type" Means, and the Solved Morse Case
+## 3. Type, and the solved Morse case
 
 Model: $$I(z) = \int_\Gamma \omega(z)$$, integrand singular on a $$z$$-family of hypersurfaces.
 
 - **Landau dichotomy**: singularities arise when critical points **pinch** the cycle, or
   when the singular locus runs into the **endpoint / boundary** structure of $$\Gamma$$.
-  (Second-type singularities: pinching at infinity; historically the treacherous case.)
+  (Second-type singularities: pinching at infinity; the classically subtle case.)
 - Near a **simple pinch** (one Morse critical point, one vanishing sphere), the transverse
   directions contribute a Gaussian (steepest-descent) factor, and the local behavior is
   analytic $$+\, c(z)\,(z - z_\star)^{\gamma}$$, possibly $$\times \log(z - z_\star)$$: the
@@ -88,11 +88,11 @@ $$ \mathrm{Disc}\, I(z) \;=\; \pm \langle \Gamma, \delta \rangle \int_{\delta(z)
   cycles the contour actually meets, plus the leading exponents.
 
 Every statement in this section is worked to the last constant on the smallest example:
-[The Bubble, Six Ways]({{ '/notes/the-bubble-six-ways/' | relative_url }}).
+[The Bubble, Exactly]({{ '/notes/the-bubble-six-ways/' | relative_url }}).
 
 ---
 
-## 4. Relative Picard–Lefschetz: the Feynman Refinement
+## 4. Relative Picard–Lefschetz (the Feynman case)
 
 The parametric (Symanzik / Lee–Pomeransky) cycle is not closed: it is the positive
 orthant / simplex, with boundary on the coordinate divisors. So the homology is
@@ -105,14 +105,14 @@ orthant / simplex, with boundary on the coordinate divisors. So the homology is
 - **Berghoff–Panzer, *Hierarchies in relative Picard–Lefschetz theory*
   (arXiv:2212.06661)**: the rigorous development: relative monodromy and variation,
   localization of the variation on the pinched stratum, vanishing theorems for iterated
-  variations, and a complete treatment of simple pinches. Base camp for anything beyond.
+  variations, and a complete treatment of simple pinches.
 - In progress (Panzer–Parisi–Gürdoğan): the full analytic structure of parametric Feynman
   integrals via Leray/Pham differential topology: the Feynman case in full has never been
   written down. These notes are pointed at exactly this program.
 
 ---
 
-## 5. The Open Frontier: Beyond the Simple Pinch
+## 5. Beyond the simple pinch
 
 The two failure modes of the Morse hypothesis (= §6 of the algebraic-structure note),
 each with the toolbox it calls for.
@@ -136,7 +136,7 @@ each with the toolbox it calls for.
 - Genuinely new phenomena expected from the manifold's own topology feeding the type; no
   closed formula is known, even conjecturally, in general.
 
-### 5.3 Practical wedge
+### 5.3 Practical attack
 - Locate and stratify with the discriminant machinery (PLD / Euler discriminant / SPQR:
   §§2.2, 5.3 of the algebraic-structure note); classify endpoint vs pinch by polytope
   dissection (§2.3 there); then run the local analysis stratum by stratum. The missing
