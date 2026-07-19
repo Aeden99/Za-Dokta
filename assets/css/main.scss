@@ -165,6 +165,12 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; }
 /* Display math: let it scroll on narrow screens instead of overflowing */
 mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: .25rem 0; max-width: 100%; }
 
+/* Tables (dictionary-style notes); wide ones scroll inside the article */
+.prose table { width: 100%; border-collapse: collapse; font-size: .9rem; line-height: 1.5; margin: 0 0 1.25rem; display: block; overflow-x: auto; }
+.prose th { font-family: var(--sans); font-size: .68rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--muted); text-align: left; padding: .4rem .9rem .4rem 0; border-bottom: 1px solid var(--rule); }
+.prose td { padding: .5rem .9rem .5rem 0; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+
 /* --- Prev / next pager -------------------------------------------------------- */
 .note-pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3.5rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); }
 .note-pager a { display: block; }

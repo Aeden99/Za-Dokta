@@ -153,6 +153,8 @@ singularities colliding in the triangle.
    when the anomalous and normal thresholds merge? (A degenerate pinch; the concrete
    entry point for §5.1 of the
    [Picard–Lefschetz note]({{ '/notes/picard-lefschetz-and-singularity-type/' | relative_url }}).)
+   Boundary-collision bookkeeping now in
+   [From Morse to A₂]({{ '/notes/from-morse-to-a2/' | relative_url }}) §3.
 2. **Iterated discontinuities.** $$\operatorname{Disc}$$ at $$4m^2$$ followed by
    $$\operatorname{Disc}$$ at $$s_a$$: track the monodromy-group orbit and the compatibility
    constraints on sequential discontinuities.

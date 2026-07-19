@@ -126,7 +126,8 @@ each with the toolbox it calls for.
   mixed Hodge structure on vanishing cohomology (Steenbrink).
 - Expectation: the degenerate type formula reads these invariants of the local singularity
   instead of a Hessian determinant. The work is pushing this through the *relative*
-  setting and the actual contour.
+  setting and the actual contour. First steps:
+  [From Morse to A₂]({{ '/notes/from-morse-to-a2/' | relative_url }}).
 
 ### 5.2 Positive-dimensional critical loci
 - Replace the isolated-point analysis by a fibration over the critical manifold;

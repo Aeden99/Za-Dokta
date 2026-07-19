@@ -270,6 +270,9 @@ its refinements.
   machinery of §5.3 (SPQR §4.2); the missing piece (per Matsubara-Heo) is isolating
   individual irreducible components. Endpoint-vs-pinch via §2.3 is a partial type-classifier.
 
+First working steps on the degenerate case:
+[From Morse to A₂]({{ '/notes/from-morse-to-a2/' | relative_url }}).
+
 ---
 
 ## 7. Two Mathematical Sides (orientation for the literature)

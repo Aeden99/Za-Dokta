@@ -90,6 +90,7 @@ framing (§1 of the algebraic-structure note) rather than working purely locally
    replaces eqs. (7.12)/(7.15) when the Hessian degenerates? Concrete instance: the
    anomalous-normal threshold collision in the
    [triangle note]({{ '/notes/the-triangle-and-the-anomalous-threshold/' | relative_url }}).
+   First worked steps: [From Morse to A₂]({{ '/notes/from-morse-to-a2/' | relative_url }}).
 2. **Positive-dimensional pinches.** Morse–Bott first. What does the critical manifold's
    own topology contribute to the type?
 3. **Component isolation** of the Euler discriminant (Matsubara-Heo's open flag): can the
