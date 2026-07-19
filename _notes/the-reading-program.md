@@ -19,7 +19,9 @@ target: the singularity-type problem (§6 of the
 [algebraic-structure note]({{ '/notes/algebraic-structure-of-feynman-integrals/' | relative_url }})).
 This page is the program itself: what to read, in what order, and what each item is
 *for*. Kept current as the notes grow. The whole toolkit, run end-to-end on the smallest
-example: [The Bubble, Six Ways]({{ '/notes/the-bubble-six-ways/' | relative_url }}).
+example: [The Bubble, Six Ways]({{ '/notes/the-bubble-six-ways/' | relative_url }});
+continued to the first stratified case in
+[The Triangle and the Anomalous Threshold]({{ '/notes/the-triangle-and-the-anomalous-threshold/' | relative_url }}).
 
 ---
 
@@ -85,7 +87,9 @@ framing (§1 of the algebraic-structure note) rather than working purely locally
 
 1. **Degenerate pinches.** Import the Arnold–Varchenko asymptotic toolbox (Newton
    polyhedron, spectrum, $$b$$-function) into the relative Picard–Lefschetz setting. What
-   replaces eqs. (7.12)/(7.15) when the Hessian degenerates?
+   replaces eqs. (7.12)/(7.15) when the Hessian degenerates? Concrete instance: the
+   anomalous-normal threshold collision in the
+   [triangle note]({{ '/notes/the-triangle-and-the-anomalous-threshold/' | relative_url }}).
 2. **Positive-dimensional pinches.** Morse–Bott first. What does the critical manifold's
    own topology contribute to the type?
 3. **Component isolation** of the Euler discriminant (Matsubara-Heo's open flag): can the

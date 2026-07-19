@@ -30,8 +30,9 @@ log), not just its location. The Morse case is solved; the degenerate and
 positive-dimensional cases are open. The notes build background for an attack through
 relative Picard–Lefschetz theory.
 [The Reading Program]({{ '/notes/the-reading-program/' | relative_url }}) tracks the path;
-[The Bubble, Six Ways]({{ '/notes/the-bubble-six-ways/' | relative_url }}) shows the
-toolkit running on the smallest example.
+[The Bubble, Six Ways]({{ '/notes/the-bubble-six-ways/' | relative_url }}) and
+[The Triangle and the Anomalous Threshold]({{ '/notes/the-triangle-and-the-anomalous-threshold/' | relative_url }})
+show the toolkit running on the smallest examples.
 
 ### How this site is organised
 

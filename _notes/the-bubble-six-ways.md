@@ -189,9 +189,9 @@ machinery is overkill here (weight one), which is exactly why the example is cle
 Everything above is Morse, simple-pinch, weight one, algebraic-letter. The open problems
 of §6 of the algebraic-structure note begin where the bubble ends: degenerate critical
 points (colliding thresholds), anomalous thresholds with nontrivial iterated structure
-(triangle, box), non-algebraic alphabets and the Calabi–Yau wall (sunrise). Next worked
-example planned: the triangle and its anomalous threshold, where the leading singularity
-first depends on masses in an interesting way.
+(triangle, box), non-algebraic alphabets and the Calabi–Yau wall (sunrise). The triangle
+is now worked through in
+[The Triangle and the Anomalous Threshold]({{ '/notes/the-triangle-and-the-anomalous-threshold/' | relative_url }}).
 
 ---
 
