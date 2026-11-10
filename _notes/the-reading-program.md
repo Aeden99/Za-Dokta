@@ -6,10 +6,8 @@ order: 4
 date: 2026-07-15
 updated: 2026-11-11
 summary: >-
-  The literature behind the notes, in the order that worked: the known formula for the
-  type of a Landau singularity, the classical theory of vanishing cycles, its relative
-  form for Feynman integrals, the computation of the singular locus, and the evaluation
-  of the functions. It ends with the list of questions that are open now.
+  The literature behind the notes, in the order that worked, with what each item was
+  needed for, and the list of questions that are open now.
 tags: [reading-list, roadmap, landau-singularities, picard-lefschetz, periods]
 ---
 

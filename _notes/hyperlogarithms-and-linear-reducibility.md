@@ -6,10 +6,9 @@ order: 2
 date: 2026-07-15
 updated: 2026-11-11
 summary: >-
-  What function a Feynman integral is, when it is a polylogarithm. Hyperlogarithms and
-  their shuffle product, integration of the Feynman parameters one at a time, Brown's
-  reduction and the criterion of linear reducibility, worked on the massless triangle,
-  where a square root has to be rationalised first. Then where the method stops.
+  What function a Feynman integral is, when it is a polylogarithm. Hyperlogarithms,
+  integration one variable at a time, Brown's criterion of linear reducibility, and the
+  massless triangle as a worked example.
 tags: [hyperlogarithms, polylogarithms, linear-reducibility, parametric-integration, hyperint, periods]
 ---
 

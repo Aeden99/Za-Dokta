@@ -6,10 +6,9 @@ order: 5
 date: 2026-07-15
 updated: 2026-11-11
 summary: >-
-  The one-loop bubble worked by hand. The Källén function appears as a critical value, the
-  three master integrals are counted from an Euler characteristic, the threshold expansion
-  is derived with its exact coefficient in any dimension, the second sheet is written down,
-  and the equal-mass case is summed to a Gauss hypergeometric function.
+  The one-loop bubble computed by hand: the Landau equations, the count of three master
+  integrals, the threshold expansion with its coefficient in any dimension, the second
+  sheet, and the hypergeometric form for equal masses.
 tags: [worked-example, bubble, landau-equations, kallen, thresholds, cutkosky]
 ---
 

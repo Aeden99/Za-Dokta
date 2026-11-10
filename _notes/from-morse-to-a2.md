@@ -6,11 +6,9 @@ order: 7
 date: 2026-07-19
 updated: 2026-11-11
 summary: >-
-  First steps on the open problem. The Landau exponent is re-derived and matched against
-  Hannesdóttir–Mizera, the boundary model that governs colliding thresholds is solved, and
-  the cubic critical point A₂ is worked out completely, including the Feynman contour.
-  An explicit A₂ point is then exhibited in a Feynman integral, at a cusp of the Landau
-  curve of the two-loop acnode graph.
+  First steps on the open problem. The cubic critical point A₂ is solved as a local
+  model on the Feynman contour, and an A₂ point is found in a Feynman integral, at a
+  cusp of the Landau curve of the two-loop acnode graph.
 tags: [a2-singularity, degenerate-pinch, threshold-expansions, unfolding, landau-exponents, acnode]
 ---
 

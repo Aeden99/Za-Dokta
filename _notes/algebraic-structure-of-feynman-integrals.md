@@ -6,11 +6,9 @@ order: 1
 date: 2026-06-23
 updated: 2026-11-11
 summary: >-
-  The frame for the other notes. A Feynman integral is a twisted period of an Euler
-  integral. This gives the count of master integrals, the locus where the integrals are
-  singular, the intersection pairing and the coaction. Three papers are placed in this
-  frame (Brown–Dupont, Matsubara-Heo, SPQR), and the open problem is stated: the local
-  form of the integral at a singularity whose critical point is degenerate or not isolated.
+  The frame for the other notes: a Feynman integral as a twisted period. The count of
+  master integrals, the singular locus, intersection numbers, the coaction, and the open
+  problem of the type of a degenerate singularity.
 tags: [twisted-cohomology, euler-integrals, landau-singularities, motivic-coaction, intersection-numbers, picard-lefschetz]
 ---
 

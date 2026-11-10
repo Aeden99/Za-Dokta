@@ -6,10 +6,9 @@ order: 3
 date: 2026-07-15
 updated: 2026-11-11
 summary: >-
-  The local theory behind the type of a Landau singularity. Vanishing cycles and the
-  Picard–Lefschetz formula, with the two smallest cases done by hand, the step from the
-  monodromy to a square root or a logarithm, the discontinuity as an integral over the
-  vanishing cycle, and what changes for Feynman integrals, where the cycle has a boundary.
+  The local theory behind the type of a Landau singularity: vanishing cycles, the
+  Picard–Lefschetz formula, why a threshold is a square root or a logarithm, and what
+  changes when the cycle has a boundary.
 tags: [picard-lefschetz, vanishing-cycles, monodromy, landau-singularities, milnor-fibration, cutkosky]
 ---
 

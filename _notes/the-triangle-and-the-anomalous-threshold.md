@@ -5,11 +5,9 @@ order: 6
 date: 2026-07-19
 updated: 2026-11-11
 summary: >-
-  The one-loop triangle by hand. On the simplex the second Symanzik polynomial is the Gram
-  form shifted by its critical value, which gives the critical value as det A over the
-  Gram determinant, the anomalous threshold with its sheet condition, and the logarithm at
-  d = 4 with its exact coefficient. The point where the anomalous threshold meets the
-  normal threshold is then solved in closed form.
+  The one-loop triangle: the anomalous threshold, the type of the leading singularity of
+  every one-loop graph, and a closed formula at the point where the anomalous threshold
+  meets the normal threshold.
 tags: [triangle, anomalous-threshold, landau-singularities, cayley-determinant, relative-homology, worked-example]
 ---
 
@@ -32,7 +30,7 @@ $$ I_n \;=\; \int \frac{d^dk}{i\pi^{d/2}}\,\prod_{i=1}^n \frac{1}{m_i^2 - (k+q_i
 
 where $$\Delta$$ is the simplex $$x_i \ge 0$$, $$\sum_i x_i = 1$$, and on it
 
-$$ \mathcal F \;=\; \sum_i m_i^2x_i - \sum_{i<j} s_{ij}\,x_ix_j \;=\; \tfrac12\,x^{\mathsf T}\!A\,x,
+$$ \mathcal F \;=\; \sum_i m_i^2x_i - \sum_{i < j} s_{ij}\,x_ix_j \;=\; \tfrac12\,x^{\mathsf T}\!A\,x,
    \qquad A_{ii} = 2m_i^2, \quad A_{ij} = m_i^2 + m_j^2 - s_{ij}. $$
 
 $$A$$ is the modified Cayley matrix. For the bubble $$\det A = -\lambda(s,m_1^2,m_2^2)$$.
