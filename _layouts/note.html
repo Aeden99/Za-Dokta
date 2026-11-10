@@ -19,6 +19,7 @@ layout: default
       {%- if page.subtitle -%}<p class="note-subtitle">{{ page.subtitle }}</p>{%- endif -%}
       <p class="note-meta">
         {%- if page.date -%}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>{%- endif -%}
+        {%- if page.updated -%}<span class="note-updated">revised <time datetime="{{ page.updated | date_to_xmlschema }}">{{ page.updated | date: "%B %-d, %Y" }}</time></span>{%- endif -%}
         {%- if page.tags -%}
           <span class="tag-list">
             {%- for t in page.tags -%}<span class="tag">{{ t }}</span>{%- endfor -%}
