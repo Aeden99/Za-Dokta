@@ -24,9 +24,11 @@ with full LaTeX math (via MathJax) on GitHub Pages.
    tags: [some, tags]
    ---
    ```
-3. Write the body in Markdown. **Math just works**: use single `$...$` for inline and
-   `$$...$$` for display. kramdown is set to `math_engine: null`, so MathJax renders all
-   of it untouched. No need to double-up dollar signs.
+3. Write the body in Markdown. For math, kramdown only protects `$$...$$`. So inline math
+   is written `$$...$$` inside a line of text, and display math is a `$$ ... $$` paragraph
+   of its own, with a blank line before and after. Single-dollar `$...$` is not protected
+   and gets mangled by Markdown. `python3 tools/prepare-notes.py _notes/my-note.md`
+   converts a note written with single dollars.
 
 That's it. the home-page index, the per-note table of contents, and prev/next navigation
 are all generated automatically from the front matter and headings.
@@ -70,6 +72,7 @@ bundle exec jekyll serve --livereload
 ```
 _config.yml          site + collection + kramdown/MathJax config
 _notes/              ← your notes live here (one .md per note)
+checks/              scripts that verify the formulas in the notes (not built into the site)
 _layouts/            default · home · note (TOC + prev/next)
 _includes/           head · header · footer · mathjax
 assets/css/main.scss theme (light/dark, academic serif)
