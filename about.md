@@ -8,36 +8,47 @@ permalink: /about/
 
 # About
 
-**Twisted Periods** is a personal, evolving set of working notes on the algebraic and
-analytic structure of Feynman integrals: twisted cohomology and Euler integrals, Landau
-and Euler-discriminant singularities, intersection numbers, hyperlogarithms, the motivic
-coaction and cosmic Galois group, and the Picard–Lefschetz program for the analytic
-structure of amplitudes.
+**Twisted Periods** is a set of working notes on Feynman integrals: twisted cohomology
+and Euler integrals, Landau singularities and the Euler discriminant, intersection
+numbers, hyperlogarithms, the coaction, and Picard–Lefschetz theory.
 
-The name is literal: everything here is a view on one object, the twisted (co)homology
-of an Euler integral, and its pairings are twisted periods. Feynman integrals are the
-special case I actually care about.
+The name is meant literally. A Feynman integral in parametric form is a twisted period,
+the pairing of a twisted cohomology class with a twisted cycle, and each note looks at
+this one object from a different side.
 
-The notes are written for myself first: dense, cross-referenced, and aimed at holding the
-whole picture in one place. Math is typeset with MathJax, so everything renders the way it
-reads in the source `$\TeX$`.
+### What the notes are for
 
-### Where this is heading
+The question behind them is the type of a Landau singularity. Near a point where a
+Feynman integral is singular we want its local form, a square root or a logarithm with a
+definite exponent and coefficient, and not only the location of the point. When the
+critical point responsible is isolated and non-degenerate this is known. When it is
+degenerate, or not isolated, it is open. The notes work towards the degenerate case
+through relative Picard–Lefschetz theory.
 
-The concrete target is the singularity-type problem: near a point of the Landau / Euler
-discriminant, determine the local analytic behavior of the integral (branch type, power,
-log), not just its location. The Morse case is solved; the degenerate and
-positive-dimensional cases are open. The notes build background for an attack through
-relative Picard–Lefschetz theory.
-[The Reading Program]({{ '/notes/the-reading-program/' | relative_url }}) tracks the path;
-[The Bubble, Exactly]({{ '/notes/the-bubble-six-ways/' | relative_url }}) and
-[The Triangle and the Anomalous Threshold]({{ '/notes/the-triangle-and-the-anomalous-threshold/' | relative_url }})
-show the toolkit running on the smallest examples.
+So far the bubble and the triangle have been computed completely, including the point of
+the triangle where two thresholds meet
+([The Bubble, Exactly]({{ '/notes/the-bubble-six-ways/' | relative_url }}),
+[The Triangle and the Anomalous Threshold]({{ '/notes/the-triangle-and-the-anomalous-threshold/' | relative_url }})).
+The cubic critical point has been solved as a local model, and such a point has been
+located in a two-loop Feynman integral
+([From Morse to A₂]({{ '/notes/from-morse-to-a2/' | relative_url }})).
+[The Reading Program]({{ '/notes/the-reading-program/' | relative_url }}) has the list of
+what is open.
 
-### How this site is organised
+### How the notes are written
 
-Notes live as Markdown files in `_notes/` and are grouped by **topic** on the home page.
-Each note carries front matter (`title`, `topic`, `order`, `summary`, `tags`) that drives
-the index, the table of contents, and prev/next navigation.
+Statements come with proofs, or with a precise reference when the proof is in the
+literature. Formulas quoted from papers were compared with the arXiv versions, and the
+equation numbers are those of the arXiv versions. Every computed formula was also checked
+numerically or with computer algebra. The scripts are in the
+[`checks`](https://github.com/Aeden99/Za-Dokta/tree/main/checks) folder of the repository.
+The errors that remain are mine.
+
+### How the site is organised
+
+The notes are Markdown files in `_notes/`, grouped by topic on the home page. The front
+matter of each note (`title`, `topic`, `order`, `summary`, `tags`) drives the index, the
+table of contents and the links to the previous and next note. Mathematics is typeset
+with MathJax.
 
 </div>
