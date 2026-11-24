@@ -2,7 +2,7 @@
 title: "Twisted Periods"
 tagline: "Working notes on the algebraic and analytic structure of Feynman integrals"
 description: >-
-  A growing set of working notes on Feynman integrals as twisted periods:
+  Working notes on Feynman integrals as twisted periods:
   twisted cohomology, Euler and Landau discriminants, intersection numbers,
   hyperlogarithms, the motivic coaction, Picard–Lefschetz theory, and the
   analytic structure of amplitudes.
@@ -50,6 +50,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - SETUP.md
   - vendor
   - .github
   - checks

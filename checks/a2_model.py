@@ -22,11 +22,11 @@ PT = b + a*T + c*T**2
 check('kappa = -1/2: primitive, with the term -log(a + 2 sqrt(bc))/sqrt(c)', num,
       (mp.log(2*mp.sqrt(c*PT) + 2*c*T + a) - mp.log(a + 2*mp.sqrt(b*c)))/mp.sqrt(c))
 
-# massless bubble: F = x (m^2 - s + s x), exponent D - 3
+# bubble with one massless line: F = x (m^2 - s + s x), exponent D - 3
 D, mm, sv = mp.mpf('3.4'), mp.mpf('1.3'), mp.mpf('0.9')
 lhs = mp.gamma(2 - D/2)*mp.quad(lambda t: (t*(mm**2 - sv + sv*t))**(D/2 - 2), [0, 0.5, 1])
 rhs = mp.gamma(2 - D/2)*mm**(D - 4)/(D/2 - 1)*mp.hyp2f1(2 - D/2, 1, D/2, sv/mm**2)
-check('massless bubble = Gamma(2-D/2) m^(D-4)/(D/2-1) 2F1(2-D/2,1;D/2;s/m^2)  (ratio)', lhs/rhs, 1)
+check('bubble with one massless line = Gamma(2-D/2) m^(D-4)/(D/2-1) 2F1(2-D/2,1;D/2;s/m^2)  (ratio)', lhs/rhs, 1)
 check('Gauss exponent c - a - b = D - 3', D/2 - (2 - D/2) - 1, D - 3)
 
 # ---------------------------------------------------------------------------------------

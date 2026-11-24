@@ -4,7 +4,7 @@ subtitle: "Threshold expansions when the Hessian degenerates"
 topic: "Singularities and Monodromy"
 order: 7
 date: 2026-07-19
-updated: 2026-11-11
+updated: 2026-11-24
 summary: >-
   First steps on the open problem. The cubic critical point A₂ is solved as a local
   model on the Feynman contour, and an A₂ point is found in a Feynman integral, at a
@@ -18,7 +18,7 @@ threshold is isolated and non-degenerate. The open problem
 is what replaces it when one of these two conditions fails. This note is about the first
 failure, a degenerate Hessian, in its simplest form.
 
-Four things are done. The count of exponents in the non-degenerate case is re-derived
+The count of exponents in the non-degenerate case is re-derived
 and matched with the literature (Section 1). The case of a critical point reaching the boundary is solved
 (Section 2). The cubic critical point $$A_2$$ is worked out as a local model, with the
 contour that a Feynman integral actually uses (Sections 3 and 4). And an $$A_2$$ point is
@@ -75,8 +75,8 @@ $$ \gamma \;=\; \frac{\ell D - n - 1}{2}. \tag{1} $$
 
 It is eq. (7.12) of Hannesdóttir–Mizera for a scalar integral, and eq. (3) of the Landau
 bootstrap paper. The expansion with its coefficient, which contains the Hessian
-determinant, is eq. (7.15) of Hannesdóttir–Mizera, stated there for $$\gamma \le 0$$. For one
-loop everything is explicit: the bubble gives $$\gamma = \tfrac12$$ and the triangle
+determinant, is eq. (7.15) of Hannesdóttir–Mizera, stated there for $$\gamma \le 0$$. At one
+loop the bubble gives $$\gamma = \tfrac12$$ and the triangle
 $$\gamma = 0$$ in four dimensions, with the coefficients computed in the two worked
 examples.
 
@@ -93,7 +93,7 @@ about what happens when the last two fail.
 
 ## 2. A critical point that reaches the boundary
 
-The mildest failure is $$\partial_e\mathcal V \to 0$$: a critical point in the interior moves
+The mildest failure is $$\partial_e\mathcal V \to 0$$, where a critical point in the interior moves
 to the boundary. In one variable the model is $$b + a\,t + c\,t^2$$ on $$t \ge 0$$, with $$c > 0$$
 fixed and $$(a,b)$$ small.
 
@@ -113,7 +113,7 @@ the non-analytic part. So the parameter $$b$$ has weight $$1$$ and $$a$$ has wei
 and the exponent seen along a direction is $$(\kappa+\tfrac12)$$ divided by the weight of
 the parameter that is varied.
 
-**The massless bubble.** Set $$m_2 = 0$$ in the bubble. On the simplex
+**The bubble with one massless line.** Set $$m_2 = 0$$ in the bubble. On the simplex
 $$\mathcal F = x\,(m^2 - s + s\,x)$$, which is the model with $$b = 0$$ identically,
 $$a = m^2 - s$$, $$c = s$$ and $$\kappa = D/2 - 2$$. The lemma gives the exponent
 $$2\kappa + 1 = D - 3$$ at $$s = m^2$$. This agrees with the exact result
@@ -124,8 +124,8 @@ $$ I \;=\; \frac{\Gamma(2 - \tfrac D2)}{\tfrac D2 - 1}\,(m^2)^{\frac D2-2}\;
 whose exponent at $$s = m^2$$ is $$c-a-b = D-3$$ in Gauss's notation. In four dimensions it
 is the familiar $$(m^2-s)\log(m^2-s)$$. The exponent of the massive bubble is $$(D-3)/2$$, so
 sending one mass to zero doubles it. Proposition 1 does not apply here, because the
-normal derivative $$m^2 - s$$ vanishes at the threshold. An earlier version of this note
-applied it anyway and got $$(D-2)/2$$, which agrees with $$D-3$$ only at $$D = 4$$.
+normal derivative $$m^2 - s$$ vanishes at the threshold. Applied formally it
+would give $$(D-2)/2$$, which agrees with $$D-3$$ only at $$D = 4$$.
 
 **The triangle.** The point where the anomalous threshold meets the normal threshold is
 the same model in two parameters, with $$\kappa = -\tfrac12$$ after the Gaussian direction is
@@ -142,8 +142,8 @@ splitting lemma there are local coordinates $$(\delta, u)$$ in which
 $$ \mathcal V \;=\; A + c\,\delta^3 + Q(u), $$
 
 with $$Q$$ a non-degenerate quadratic form in the remaining $$n-2$$ variables. This is the
-singularity $$A_2$$. It is recognised by two checks: the Hessian has corank one, and the
-cubic form along the kernel is non-zero. The Milnor number
+singularity $$A_2$$. It is recognised by a Hessian of corank one and a non-zero
+cubic form along the kernel. The Milnor number
 $$\dim\mathcal O/(\partial\mathcal V)$$ is then $$2$$.
 
 **Lemma 3.** For $$A, c > 0$$ and $$\nu < -\tfrac23$$,
@@ -159,9 +159,9 @@ $$ \begin{aligned}
 $$\int_0^\infty w^{p-1}(1+w)^{\nu}dw = B(p, -\nu-p)$$ with $$p = \tfrac13$$ and $$p = \tfrac23$$.
 $$\square$$
 
-A Feynman integral does not integrate over a half-line. It integrates over the real line
-with the prescription $$\mathcal V - i\varepsilon$$, and $$A + c\,\delta^3$$ changes sign on the
-real line whatever the sign of $$A$$.
+In a Feynman integral the contour is the whole real line, with the prescription
+$$\mathcal V - i\varepsilon$$, and $$A + c\,\delta^3$$ changes sign on it whatever the sign
+of $$A$$.
 
 **Proposition 4.** For real $$A \ne 0$$, $$c > 0$$ and $$\nu < -\tfrac23$$,
 
@@ -222,7 +222,7 @@ of the form $$\sum_i x_i^{a_i}$$ it was computed by Pham in 1965.
 
 ## 4. The unfolding
 
-At an $$A_2$$ point the kinematics does not only move the critical value. A second
+At an $$A_2$$ point the kinematics moves the critical value, and a second
 parameter splits the degenerate point into two non-degenerate ones. The universal local
 model is
 
@@ -271,10 +271,10 @@ the direction of approach.
 <figcaption>The cusp \(4a^3 + 9b^2 = 0\) in the plane of the unfolding parameters, and the three directions of the text. On the two branches one critical value vanishes and the point is an ordinary Landau point.</figcaption>
 </figure>
 
-The three cases are one statement. Give $$\delta$$ weight $$\tfrac13$$. Then $$f$$ is
+The three cases follow from one rule. Give $$\delta$$ weight $$\tfrac13$$. Then $$f$$ is
 homogeneous of weight $$1$$ if $$b$$ has weight $$1$$ and $$a$$ has weight $$\tfrac23$$, and
 $$\int d\delta\,f^{\nu}$$ has weight $$\nu + \tfrac13$$. Along a direction whose parameter has
-weight $$w$$ the exponent is $$(\nu+\tfrac13)/w$$: this is $$\nu + \tfrac13$$ for $$b$$ and
+weight $$w$$ the exponent is $$(\nu+\tfrac13)/w$$, which is $$\nu + \tfrac13$$ for $$b$$ and
 $$\tfrac{3\nu+1}{2}$$ for $$a$$. It is the same rule as in Section 2, where the weights were
 $$1$$ and $$\tfrac12$$. A generic line through the origin of the $$(a,b)$$ plane behaves like
 direction 1, because $$b$$ has the larger weight. Direction 3, the tangent to the cusp, is
@@ -289,12 +289,12 @@ an entire function of $$a$$. What changes with $$a$$ is which critical points co
 steepest-descent contours jump on the Stokes lines $$\arg a = 0, \pm 2\pi/3$$. A recent and
 detailed treatment of this example is the paper of Li, Li and Tang.
 
-So at a degenerate Landau point the answer to "what is the type" is not one exponent. It
-is a function of weight $$\nu + \tfrac13$$ on the $$(a,b)$$ plane, singular on the cusp,
-together with the map from the kinematics to that plane. Any extension of the formula of
-Hannesdóttir–Mizera to this case has to have that form. This fits the observation of
+So at a degenerate Landau point the type is described by a function of weight
+$$\nu + \tfrac13$$ on the $$(a,b)$$ plane, singular on the cusp, together with the map from
+the kinematics to that plane, and not by one exponent. Any extension of the formula of
+Hannesdóttir–Mizera to this case has to have that form. This fits the suggestion of
 Bourjaily, Vergu and von Hippel that roots of order higher than two can only be reached
-in limits of codimension higher than one: the $$A_2$$ point is the cusp point, which has
+in limits of codimension higher than one. The $$A_2$$ point is the cusp point, which has
 codimension two.
 
 ## 5. An $$A_2$$ point in a Feynman integral
@@ -426,7 +426,7 @@ $$ \begin{aligned}
 and $$x_* \approx (0.2527,\, 0.0925,\, 0.2527,\, 0.0925,\, 0.3095)$$ on the simplex. The point
 where the cusps merge is $$M^2 = 4 + 5/\sqrt3$$, $$s = t = 5 + 7/\sqrt3$$.
 
-**What the local model predicts.** In four dimensions (1) gives $$\gamma = 1$$ for this
+**Prediction of the local model.** In four dimensions (1) gives $$\gamma = 1$$ for this
 graph, so at an ordinary point of the Landau curve the integral behaves like
 $$\Delta\log\Delta$$ in the distance $$\Delta$$ to the curve. At the cusp, along a generic
 line through it, (2) gives the exponents
@@ -437,7 +437,7 @@ with coefficients whose phases are fixed by Proposition 4. Along such a line a t
 around the cusp point multiplies the two terms by $$e^{2\pi i\cdot 5/6}$$ and
 $$e^{2\pi i\cdot 7/6}$$.
 
-This is what the topology requires. Near the cusp point the Landau curve has two
+The monodromy gives the same phases. Near the cusp point the Landau curve has two
 branches, and around each of them the monodromy is that of a logarithm. On the two
 vanishing cycles, which meet once, the Picard–Lefschetz formula gives the two matrices
 
@@ -449,7 +449,7 @@ The braid relation is the relation in the fundamental group of the complement of
 cusp, and a loop around the cusp point in a generic line is the product
 $$\sigma_1\sigma_2$$. Its characteristic polynomial is $$\lambda^2 - \lambda + 1$$, so it has
 order six and eigenvalues $$e^{\pm i\pi/3}$$, which are $$e^{2\pi i\cdot 7/6}$$ and
-$$e^{2\pi i\cdot 5/6}$$. Two logarithms compose to a sixth root. This is also why the
+$$e^{2\pi i\cdot 5/6}$$. This is also why the
 prediction does not conflict with the observation, recalled in the Landau bootstrap
 paper, that the branch points of Feynman integrals found so far are square roots and
 logarithms. That is a statement about generic points of the Landau variety.
@@ -502,7 +502,7 @@ near a generic point of a single Landau variety for pinches of non-degenerate ty
 states that the case of several massless particles is of a different, degenerate type
 and is not covered.
 
-## 7. What is not done
+## 7. Open points
 
 - The exponents $$\tfrac56$$ and $$\tfrac76$$ at the acnode cusp are a prediction of the local
   model. They have not been checked on the integral.

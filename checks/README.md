@@ -9,7 +9,7 @@ They are not part of the built site.
 | `bubble.py` | The Bubble, Exactly | critical value and Källén function, the conic of Section 3, Lemma 1, the threshold expansion in several dimensions with its coefficient, the comparison with Hannesdóttir–Mizera (7.89), the discontinuity, the hypergeometric form |
 | `master_counts.py` | The Bubble, Exactly; The Triangle | numbers of master integrals as numbers of critical points, over a finite field: 3, 2, 1 for the bubble, 7 and 6 for the triangle |
 | `triangle.py` | The Triangle and the Anomalous Threshold | Lemma 1 and Proposition 1 (Gram identities, for up to five propagators), the equal-mass case, the logarithm at the anomalous threshold, Theorem 3 near the point where the two thresholds meet |
-| `a2_model.py` | From Morse to A₂, Sections 2 to 4 | the boundary model, the massless bubble, the cubic model on the half-line and on the real line with the Feynman prescription, the unfolding, the two monodromy computations |
+| `a2_model.py` | From Morse to A₂, Sections 2 to 4 | the boundary model, the bubble with one massless line, the cubic model on the half-line and on the real line with the Feynman prescription, the unfolding, the two monodromy computations |
 | `sunrise.py` | From Morse to A₂, Section 5 | the critical points of the sunrise are non-degenerate |
 | `acnode.py` | From Morse to A₂, Section 5 | the polynomials of the acnode graph, Propositions 5, 6 and 7 as exact identities, the point of type A₃, the example at θ = π/12 |
 | `acnode_numeric.py` | From Morse to A₂, Section 5 | which graph has the Landau curve, the second degenerate locus, the branch of solutions that are not symmetric |

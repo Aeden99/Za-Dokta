@@ -4,7 +4,7 @@ subtitle: "Feynman integrals as twisted periods: how many there are, where they 
 topic: "Feynman Integrals"
 order: 1
 date: 2026-06-23
-updated: 2026-11-11
+updated: 2026-11-24
 summary: >-
   The frame for the other notes: a Feynman integral as a twisted period. The count of
   master integrals, the singular locus, intersection numbers, the coaction, and the open
@@ -63,7 +63,7 @@ $$ \dim H^n(X,\nabla) \;=\; (-1)^n\,\chi(X) \;=\; \#\{\text{critical points of }
 The first equality is the classical vanishing theorem for twisted cohomology (see the
 *Four Lectures on Euler Integrals*). The second is Huh's theorem on the maximum
 likelihood degree of a smooth very affine variety. In
-practice the last number is easy to get: the equations $$\omega = 0$$ generate a
+practice the last number is easy to get, because the equations $$\omega = 0$$ generate a
 zero-dimensional ideal, and the number of solutions is the number of standard monomials
 of a Gröbner basis. The counts quoted in the worked examples were checked this way, over
 a finite field and with random exponents.
@@ -82,7 +82,7 @@ and Panzer do this with a theorem of Loeser and Sabbah, and conclude that the nu
 master integrals of the family is the Euler characteristic of the complement of
 $$\{\mathcal G = 0\}$$ in the torus, up to sign.
 
-For the bubble this number is $$3$$: the bubble and two tadpoles. It is computed by hand in
+For the bubble this number is $$3$$, the bubble and two tadpoles. It is computed by hand in
 Section 3 of the [bubble note]({{ '/notes/the-bubble-six-ways/' | relative_url }}), where
 $$\{\mathcal G = 0\}$$ is a conic.
 
@@ -120,7 +120,7 @@ $$ m_1^2\,m_2^2\,s\,\lambda(s, m_1^2, m_2^2) \;=\; 0 $$
 
 (Proposition 1 of the bubble note). It contains the threshold and the pseudo-threshold,
 the second-type singularity $$s = 0$$, and the two mass singularities. The Euler
-characteristic does not know which of these the integration cycle meets.
+characteristic does not determine which of these the integration cycle meets.
 
 There are now several ways to compute these loci: the package `PLD.jl`, the Euler
 stratifications of Telen and Wiesmann, and elimination over finite fields, with which
@@ -207,7 +207,7 @@ $$n = 3$$,
 $$ \Delta\,\mathrm{Li}_3(z) \;=\; 1\otimes\mathrm{Li}_3(z) + \mathrm{Li}_3(z)\otimes 1
    + \mathrm{Li}_2(z)\otimes\log z - \log(1-z)\otimes\tfrac12\log^2 z . $$
 
-Two properties make it useful:
+The coaction is compatible with discontinuities and with derivatives,
 
 $$ \Delta\,\mathrm{Disc} = (\mathrm{Disc}\otimes\mathrm{id})\,\Delta, \qquad
    \Delta\,\partial_z = (\mathrm{id}\otimes\partial_z)\,\Delta . $$
@@ -239,7 +239,7 @@ coaction of the form
 $$ \Delta\int_\gamma\omega \;=\; \sum_i \int_\gamma\omega_i \,\otimes \int_{\gamma_i}\omega, $$
 
 where the $$\omega_i$$ are master integrands and the $$\gamma_i$$ are the contours dual to
-them. At one loop it has a description by graphs: the left factors are graphs with
+them. At one loop it has a description by graphs, in which the left factors are graphs with
 edges contracted and the right factors are cuts. It is a conjecture, tested on many
 one-loop integrals, that this reproduces the coaction on polylogarithms order by order
 in $$\varepsilon$$. For hypergeometric functions the same authors with Matthew define the
@@ -272,7 +272,7 @@ The object is a family of very affine hypersurfaces or complete intersections, w
 Euler integrals on it. A hypergeometric system is attached to the family, and the Euler
 discriminant is shown to be its singular locus, of pure codimension one. The
 characteristic cycle of the system is called the hypergeometric discriminant, and there
-is a formula for it in terms of the likelihood equations. Two things are stated as open:
+is a formula for it in terms of the likelihood equations. The paper leaves open
 how to isolate the individual irreducible components of the Euler discriminant, and how
 it is related to the bifurcation set of the family.
 
@@ -281,14 +281,14 @@ elimination. The remainder of a polynomial modulo an ideal is obtained by linear
 on Macaulay matrices, evaluated at sample points over finite fields and reconstructed
 afterwards. A numerical Gröbner basis is computed once to find the irreducible monomials,
 and for a zero-dimensional ideal the companion matrices give the roots. The authors
-compare this with integration-by-parts reduction: the Macaulay system plays the role of
+compare this with integration-by-parts reduction, where the Macaulay system plays the role of
 the system of identities and the irreducible monomials that of the master integrals. For
 Landau analysis the method is elimination in the Landau equations, and it finds
 singularities that were not known. The follow-up with Giroux, *Landau's Leviathans*
 (arXiv:2606.29612), is the one mentioned in Section 2.
 
 **How they fit.** The first two papers are about the same kind of object, the twisted
-periods of an Euler integral, and they overlap exactly at $$_2F_1$$: one variable and three
+periods of an Euler integral, and they overlap exactly at $$_2F_1$$, the case of one variable and three
 removed points. From there they go in different directions. Brown–Dupont keep one
 variable, allow each linear factor its own exponent, and study the arithmetic of the
 functions, that is the coaction. Matsubara-Heo keeps one polynomial to one power, allows
@@ -300,21 +300,28 @@ functions are and where they are singular. The next question is the one below.
 ## 6. The open problem
 
 Let $$z_0$$ be a point of the singular locus. The type of the singularity is the leading
-non-analytic term of the integral as $$z \to z_0$$: an exponent, possibly a logarithm, and a
+non-analytic term of the integral as $$z \to z_0$$, that is an exponent, possibly a logarithm, and a
 coefficient.
 
 **What is known.** Suppose that the singularity comes from one critical point of
 $$\mathcal V = \mathcal F/\mathcal U$$ which is isolated and has a non-degenerate Hessian. Then the
-leading term is $$A^{\gamma}$$, or $$A^{\gamma}\log A$$ if $$\gamma$$ is a non-negative integer, where
+leading non-analytic term is $$A^{\gamma}$$, or $$A^{\gamma}\log A$$ if $$\gamma$$ is a non-negative
+integer, where
 $$A$$ is the critical value and
 
 $$ \gamma \;=\; \frac{\ell D - n - 1}{2} $$
 
 for a graph with $$\ell$$ loops and $$n$$ propagators in $$D$$ dimensions. The coefficient
-contains the Hessian determinant. This is in Hannesdóttir–Mizera: eqs. (7.12) and (7.15)
-for a critical point in the interior of the simplex, eqs. (7.20) and (7.32) for one on a
-face, where the graph is replaced by a contraction, and eq. (7.18) for singularities of
-the second type. The topological side is the Picard–Lefschetz formula, in the relative
+contains the Hessian determinant. For $$\gamma \le 0$$, where the integral diverges at the
+singularity, this is in Hannesdóttir–Mizera, eqs. (7.12) and (7.15)
+for a critical point in the interior of the simplex and eqs. (7.20) and (7.32) for one on a
+face, where the graph is replaced by a contraction. For $$\gamma > 0$$ the integral is finite
+there, and they recall Landau's conjecture that $$A^{\gamma}$$, or $$A^{\gamma}\log A$$, is then
+the leading discontinuous behaviour near anomalous thresholds. The statement about the
+exponent, for all $$\gamma$$, is Proposition 1 of
+[From Morse to A₂]({{ '/notes/from-morse-to-a2/' | relative_url }}). Singularities of the
+second type have a different exponent, their eq. (7.18). The topological side is the
+Picard–Lefschetz formula, in the relative
 form that Feynman integrals need (Berghoff–Panzer). The one-loop cases are worked out in
 the [bubble]({{ '/notes/the-bubble-six-ways/' | relative_url }}) and
 [triangle]({{ '/notes/the-triangle-and-the-anomalous-threshold/' | relative_url }}) notes,
@@ -328,11 +335,11 @@ with a formula for every one-loop graph.
 Both are excluded from the formulas above. Hannesdóttir and Mizera remark that critical
 sets of positive dimension are common once massless particles are present. For generic
 masses a degenerate critical point is expected only in codimension two, for example at a
-cusp of a Landau curve. This agrees with the observation of Bourjaily, Vergu and von
+cusp of a Landau curve. This agrees with the suggestion of Bourjaily, Vergu and von
 Hippel that roots of order higher than two need limits of codimension higher than one.
 
 **What exists around it.** For an isolated degenerate critical point the homology is
-understood: Section 3.9 of Berghoff–Panzer reduces the variation to the classical
+understood, since Section 3.9 of Berghoff–Panzer reduces the variation to the classical
 variation operator of the singularity. Srednyak and Khachatryan derive expansions near
 generic points of a single Landau variety for pinches of non-degenerate type and exclude
 the others. Vergu shows on examples how massless propagators change the local behaviour,
@@ -341,16 +348,16 @@ critical point are the subject of the second volume of Arnold, Gusein-Zade and V
 What is missing is the expansion of a Feynman integral, on its own contour, with
 exponents and coefficients.
 
-**What these notes add.** Two things, both small.
+**Contribution of these notes.**
 
 - For the triangle, the point where the anomalous threshold meets the normal threshold
   is solved in closed form (Theorem 3 of the triangle note). Two components of the Landau
-  variety are tangent there. No single exponent describes the integral at that point.
-  It is described by one function of two variables that reduces to the known exponents
-  along each direction.
+  variety are tangent there. The integral at that point is described by one function of
+  two variables, which reduces to the known exponents along each direction, and not by a
+  single exponent.
 - For the cubic critical point $$A_2$$ the local model is solved on the Feynman contour,
   with exponents $$\gamma - \tfrac16$$ and $$\gamma + \tfrac16$$, and such a point is exhibited in
-  a Feynman integral: at a cusp of the Landau curve of the two-loop acnode graph the
+  a Feynman integral. At a cusp of the Landau curve of the two-loop acnode graph the
   critical point is exactly of type $$A_2$$
   ([From Morse to A₂]({{ '/notes/from-morse-to-a2/' | relative_url }})). The exponents
   $$\tfrac56$$ and $$\tfrac76$$ predicted there in four dimensions have not yet been checked on

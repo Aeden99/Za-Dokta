@@ -12,7 +12,7 @@ permalink: /about/
 and Euler integrals, Landau singularities and the Euler discriminant, intersection
 numbers, hyperlogarithms, the coaction, and Picard–Lefschetz theory.
 
-The name is meant literally. A Feynman integral in parametric form is a twisted period,
+A Feynman integral in parametric form is a twisted period,
 the pairing of a twisted cohomology class with a twisted cycle, and each note looks at
 this one object from a different side.
 
@@ -38,11 +38,12 @@ what is open.
 ### How the notes are written
 
 Statements come with proofs, or with a precise reference when the proof is in the
-literature. Formulas quoted from papers were compared with the arXiv versions, and the
-equation numbers are those of the arXiv versions. Every computed formula was also checked
-numerically or with computer algebra. The scripts are in the
+literature. The notes were drafted with Claude (Anthropic). The computed formulas are
+checked numerically or with computer algebra, and the scripts are in the
 [`checks`](https://github.com/Aeden99/Za-Dokta/tree/main/checks) folder of the repository.
-The errors that remain are mine.
+Formulas quoted from papers were compared with the arXiv versions, whose equation numbers
+are used. Not every section has been worked through by hand yet. The errors that remain
+are mine.
 
 ### How the site is organised
 

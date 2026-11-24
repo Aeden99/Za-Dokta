@@ -3,7 +3,7 @@ title: "The Triangle and the Anomalous Threshold"
 topic: "Worked Examples"
 order: 6
 date: 2026-07-19
-updated: 2026-11-11
+updated: 2026-11-24
 summary: >-
   The one-loop triangle: the anomalous threshold, the type of the leading singularity of
   every one-loop graph, and a closed formula at the point where the anomalous threshold
@@ -258,7 +258,7 @@ $$ \begin{aligned}
 
 Finally $$\sqrt{sc} = \tfrac12\sqrt{s(4M^2-s)}$$ and $$a + 2\sqrt{bc} = \tfrac12 L(s)$$. $$\square$$
 
-Everything about this corner of the triangle can now be read off (5). The basic identity
+The behaviour at this corner of the triangle follows from (5). The basic identity
 is
 
 $$ L(s)\,\bar L(s) \;=\; 4m^2\,(s - s_a). \tag{6} $$
@@ -305,9 +305,9 @@ so
 
 $$ \operatorname{Var}_{n}\operatorname{Var}_{a}\, I_3 \;=\; 0 . $$
 
-This is the hierarchy of Berghoff–Panzer for massive one-loop graphs (their Section 6.1):
-a variation around a singularity of the full graph, followed by one around a singularity
-of a graph with a contracted edge, vanishes. Here it is visible in a formula.
+This is the hierarchy of Berghoff–Panzer for massive one-loop graphs (their Section 6.1),
+by which a variation around a singularity of the full graph, followed by one around a
+singularity of a graph with a contracted edge, vanishes.
 
 <figure>
 <svg viewBox="0 0 520 300" role="img" aria-label="Normal and anomalous thresholds of the triangle in the plane of M squared and s" xmlns="http://www.w3.org/2000/svg" font-size="15">
@@ -351,12 +351,12 @@ So the collision is not a degenerate critical point, and it is not an instance o
 open problem described in the
 [algebraic-structure note]({{ '/notes/algebraic-structure-of-feynman-integrals/' | relative_url }}).
 It is useful as a model for it. At a point where two components of the Landau variety
-meet, the local behaviour is not given by one exponent. It is given by a function on the
+meet, the local behaviour is given by a function on the
 base of the deformation, here $$\log(a + 2\sqrt{bc})$$, which reduces to an exponent along
 each direction. The same structure for a degenerate critical point is worked out in
 [From Morse to A₂]({{ '/notes/from-morse-to-a2/' | relative_url }}).
 
-## 6. What is left
+## 6. Open points
 
 - Theorem 3 is for $$d = 4$$. In general $$d$$ the same steps give
   $$b^{(d-4)/2}\,\Phi_d\big(a/2\sqrt{bc}\big)$$ with

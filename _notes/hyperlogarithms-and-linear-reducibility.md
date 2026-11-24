@@ -4,7 +4,7 @@ subtitle: "When a Feynman integral can be integrated one variable at a time"
 topic: "Periods and Evaluation"
 order: 2
 date: 2026-07-15
-updated: 2026-11-11
+updated: 2026-11-24
 summary: >-
   What function a Feynman integral is, when it is a polylogarithm. Hyperlogarithms,
   integration one variable at a time, Brown's criterion of linear reducibility, and the
@@ -14,8 +14,8 @@ tags: [hyperlogarithms, polylogarithms, linear-reducibility, parametric-integrat
 
 The other notes ask where a Feynman integral is singular and how. This one asks what
 function it is. For a large class of integrals the answer is a multiple polylogarithm,
-and there is an algorithm that finds it: integrate the Feynman parameters one after the
-other, and stay inside a class of functions that is closed under each step. The class is
+and there is an algorithm that finds it. The Feynman parameters are integrated one after
+the other, inside a class of functions that is closed under each step. The class is
 the hyperlogarithms. The condition under which the algorithm goes through is Brown's
 linear reducibility, and Panzer's program HyperInt carries it out.
 
@@ -55,7 +55,7 @@ by a shuffle of $$u'$$ and $$v$$, or with $$b$$, followed by a shuffle of $$u$$ 
 the right side is the derivative of $$\sum_{w\in u\,\sqcup\!\sqcup\, v}L_w$$. Both sides vanish at $$z = 0$$.
 $$\square$$
 
-Two more facts are used. The functions $$L_w$$ for different words are linearly independent
+The functions $$L_w$$ for different words are linearly independent
 over the rational functions, so a combination of them with rational coefficients can be
 written in only one way. And the class is closed under taking primitives:
 
@@ -69,7 +69,7 @@ In parametric form a convergent Feynman integral in an even number of dimensions
 integral of a rational function of the Feynman parameters over the positive orthant. Suppose that
 after some of the parameters have been integrated the result is a combination of
 hyperlogarithms in the next variable $$x$$, with letters and coefficients that are rational
-in the remaining variables. The next integration is then mechanical: partial fractions
+in the remaining variables. The next integration is then mechanical. It consists of partial fractions
 in $$x$$, a primitive by Section 1, and the limits at $$0$$ and $$\infty$$. The result
 depends on the remaining variables through the letters. It is again a combination of
 hyperlogarithms in the following variable if the polynomials that have appeared are
@@ -163,7 +163,7 @@ $$\big[2\mathrm{Li}_2(z) - 2\mathrm{Li}_2(\bar z) + \log(z\bar z)\,\log\frac{1-z
 The last integration is elementary but long and is not reproduced here. The formula was
 compared with the two-fold integral numerically, to twelve digits at three values of $$z$$.
 
-Three remarks.
+**Remarks.**
 
 - The reduction in $$x$$ produces the letters $$z$$, $$\bar z$$, $$1-z$$, $$1-\bar z$$ and
   $$z - \bar z$$, which are the ones in the result. It also produces
@@ -178,7 +178,7 @@ Three remarks.
   finite there. The locus $$\lambda = 0$$ is a singularity of the second type and is not
   seen on the first sheet, as for the bubble.
 
-## 4. What the method reaches, and where it stops
+## 4. Scope of the method
 
 Brown's first paper gives a criterion, checkable on the graph, for a massless integral
 to evaluate to multiple zeta values, and applies it to the two-point function up to five
@@ -191,7 +191,7 @@ Schnetz he computed periods of $$\phi^4$$ theory up to eleven loops. These are t
 behind the conjecture that the periods are closed under the coaction (Section 4 of the
 [algebraic-structure note]({{ '/notes/algebraic-structure-of-feynman-integrals/' | relative_url }})).
 
-Three limitations should be kept in mind.
+The method has limitations.
 
 1. The criterion is sufficient and not necessary. It depends on the variables, as the
    triangle shows.
@@ -208,12 +208,12 @@ Three limitations should be kept in mind.
    a cubic in the plane. For the banana graph with $$\ell$$ loops the elliptic curve is
    replaced by a Calabi–Yau variety of dimension $$\ell - 1$$.
 
-## 5. What this has to do with the type of a singularity
+## 5. Relation to the type of a singularity
 
 The reduction is a Landau analysis done one variable at a time, and its output contains
 the singular locus of the integral. When the integral can be done, the letters say where
 the branch points can be, on every sheet, and the function itself says what happens
-there. This is the test available for any statement about the type of a singularity: a
+there. This is the test available for any statement about the type of a singularity, since a
 predicted exponent has to agree with the explicit function wherever one is known. In the
 worked examples this is the role of the closed formulas for the bubble and the triangle.
 For the degenerate points of

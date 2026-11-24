@@ -4,7 +4,7 @@ subtitle: "The one-loop bubble computed by hand, from the Landau equations to it
 topic: "Worked Examples"
 order: 5
 date: 2026-07-15
-updated: 2026-11-11
+updated: 2026-11-24
 summary: >-
   The one-loop bubble computed by hand: the Landau equations, the count of three master
   integrals, the threshold expansion with its coefficient in any dimension, the second
@@ -13,8 +13,8 @@ tags: [worked-example, bubble, landau-equations, kallen, thresholds, cutkosky]
 ---
 
 The bubble is the smallest Feynman integral that has a threshold. Every statement made in
-the other notes can be checked on it by hand, and that is what is done here. Nothing below
-needs a computer. All the same, each formula was also checked numerically, and the scripts
+the other notes can be checked on it by hand, and that is what is done here. Each formula
+was also checked numerically, and the scripts
 are in the [`checks`](https://github.com/Aeden99/Za-Dokta/tree/main/checks) folder of the
 repository.
 
@@ -114,7 +114,7 @@ $$\chi(C) = 0$$. On the axis $$x_1 = 0$$ the equation reads $$x_2(1+m_2^2x_2) = 
 on $$x_2 = 0$$. So $$C$$ meets the axes in the three points $$(0,0)$$, $$(0,-1/m_2^2)$$ and
 $$(-1/m_1^2,0)$$. Hence $$\chi(C^\circ) = -3$$ and $$\chi(X) = 3$$.
 
-The count has three ingredients: the conic is smooth, it has two points at infinity, and it
+The count used that the conic is smooth, that it has two points at infinity, and that it
 has three points on the axes. Each can fail in one way.
 
 - If $$m_2 = 0$$ the point $$(0,-1/m_2^2)$$ has gone to infinity. Two axis points remain and
@@ -131,7 +131,7 @@ So the bubble has three master integrals, the bubble itself and the two tadpoles
 massless line leaves two, because a massless tadpole vanishes in dimensional
 regularisation, and the fully massless bubble is alone. The same numbers come out if the
 critical points of $$\log\big(\mathcal G^{\mu}x_1^{\nu_1}x_2^{\nu_2}\big)$$ are counted directly
-for random exponents, which is how they were checked.
+for random exponents.
 
 The locus where $$\chi$$ drops is the Euler discriminant of the family,
 
@@ -141,12 +141,12 @@ It has the same four components as the Landau variety of the bubble in
 Berghoff–Panzer (their Section 1.8.2): the two mass components, $$\lambda = 0$$, and the
 second-type component $$s = 0$$. Notice that $$\chi$$ drops at the pseudo-threshold exactly as
 it does at the threshold. The Euler characteristic records where the family of varieties
-degenerates. It does not know which cycle we integrate over.
+degenerates. It does not depend on the cycle of integration.
 
 ## 4. The threshold expansion
 
 By (2), near the threshold the integrand is a power of $$\mathcal F_* + s\,u^2$$ with
-$$u = x - x_*$$, and $$\mathcal F_* \to 0$$. Everything follows from one integral.
+$$u = x - x_*$$, and $$\mathcal F_* \to 0$$. The expansion follows from one integral.
 
 **Lemma 1.** Let $$s > 0$$, $$\delta > 0$$ and $$\nu + \tfrac12 \notin \mathbb Z_{\ge 0}$$. As a
 function of $$A > 0$$,
@@ -268,7 +268,7 @@ $$ \int_0^1 \big(1-4z\,x(1-x)\big)^{-\varepsilon}dx
 because $$(1)_n/(\tfrac32)_n = 4^n(n!)^2/(2n+1)!$$. Both sides are analytic off the cut.
 $$\square$$
 
-Three things can be read off.
+The expansion in $$\varepsilon$$, the threshold behaviour and an Euler integral can be read off.
 
 *The expansion in $$\varepsilon$$.* With $$\beta = \sqrt{1-4m^2/s}$$ and $$w = (\beta-1)/(\beta+1)$$,
 
@@ -305,11 +305,11 @@ $$ {}_2F_1\!\left(1,\varepsilon;\tfrac32;z\right) \;=\;
 a twisted period of the sphere punctured at $$0, 1, 1/z$$ and $$\infty$$. This is the
 one-variable setting of Brown–Dupont, and at the same time an Euler integral in the sense
 of Matsubara-Heo. The exponents here are not generic, since $$a = 1$$ is an integer, so
-their theorems are not being applied. I only want to record that the first physical
-example already sits where the two papers overlap (Section 5 of the algebraic-structure
+their theorems are not being applied. We only record that the first physical
+example lies in the overlap of the two papers (Section 5 of the algebraic-structure
 note).
 
-## 7. What the bubble does not show
+## 7. Limits of the example
 
 In the bubble the critical point is non-degenerate, it is the only one, and it lies in the
 interior. The function has weight one. The three ways this can fail are the subject of the

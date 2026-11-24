@@ -4,7 +4,7 @@ subtitle: "Vanishing cycles, the variation, and why a threshold is a square root
 topic: "Singularities and Monodromy"
 order: 3
 date: 2026-07-15
-updated: 2026-11-11
+updated: 2026-11-24
 summary: >-
   The local theory behind the type of a Landau singularity: vanishing cycles, the
   Picard–Lefschetz formula, why a threshold is a square root or a logarithm, and what
@@ -15,7 +15,7 @@ tags: [picard-lefschetz, vanishing-cycles, monodromy, landau-singularities, miln
 The Landau equations say where a Feynman integral can be singular. They do not say how.
 The local form of the integral near a singularity, a square root or a logarithm or a pole
 with some exponent, is called its type. Where the singularity sits is an algebraic
-question. The type is a topological one: it is decided by what happens to the integration
+question. The type is a topological one, decided by what happens to the integration
 cycle when the kinematic point is taken once around the singularity. Picard–Lefschetz
 theory computes this.
 
@@ -39,7 +39,7 @@ is the Milnor number. These spheres shrink to the critical point as $$t \to 0$$,
 classes in $$H_{n-1}(F_t)$$ are the vanishing cycles. We have $$\mu = 1$$ exactly when the
 Hessian is non-degenerate, and then $$f = x_1^2 + \dots + x_n^2$$ in suitable coordinates.
 
-Two examples carry most of what follows.
+Two examples are used below.
 
 **One variable, $$f = x^2$$.** The fibre is two points, $$F_t = \{\sqrt t, -\sqrt t\}$$. A sphere of
 dimension zero is a pair of points, and the vanishing cycle is the difference
@@ -111,7 +111,7 @@ $$ T\delta \;=\; (-1)^n\,\delta . \tag{2} $$
 
 The two examples are the cases $$n = 1$$ and $$n = 2$$. For $$n$$ odd the monodromy has order
 two on the span of $$\gamma$$ and $$\delta$$. For $$n$$ even it is unipotent, $$(T-1)^2 = 0$$. The
-whole difference between a square root and a logarithm is in the sign (2).
+square root and the logarithm differ only through the sign in (2).
 
 ## 3. From the monodromy to the type
 
@@ -169,7 +169,7 @@ in agreement with formula (3) of the
 The pentagon is the even case with vanishing logarithm. For non-integer exponent the
 integrand is itself multivalued around $$\mathcal V = 0$$, and the type is the power
 $$A^{\gamma}$$ with the Landau exponent $$\gamma = (\ell D - n_{\rm prop} - 1)/2$$. That exponent
-is a count of dimensions: the vanishing sphere has radius $$\sqrt A$$. It is derived, with
+is a count of dimensions, since the vanishing sphere has radius $$\sqrt A$$. It is derived, with
 the coefficient, in the [bubble note]({{ '/notes/the-bubble-six-ways/' | relative_url }}),
 and the general formula is eq. (7.15) of Hannesdóttir–Mizera.
 
@@ -224,11 +224,11 @@ $$ \operatorname{Var}_{G/J}\circ\operatorname{Var}_{G/I} \;=\; 0 \qquad\text{whe
 
 The variation on the right is taken first. For the triangle this says that the
 variation around the anomalous threshold has no singularity at the normal threshold. It
-can be seen on the closed formula: by Theorem 3 of the triangle note the first variation
+can be seen on the closed formula. By Theorem 3 of the triangle note the first variation
 is a multiple of $$1/\sqrt{s\,(4M^2 - s)}$$, which is regular at $$s = 4m^2$$. In the other
 order the result is not zero. The discontinuity across the normal threshold is singular
 at the anomalous threshold. The same list of constraints contains the parity statement of
-Section 3: the variation around the leading singularity squares to zero when the number
+Section 3, that the variation around the leading singularity squares to zero when the number
 of variables is even.
 
 ## 6. Beyond the quadratic pinch
@@ -243,7 +243,7 @@ roots of unity, and integrals over vanishing cycles have expansions in terms
 $$t^{\alpha}(\log t)^k$$ in which $$e^{2\pi i\alpha}$$ is an eigenvalue of $$T$$ and the powers of
 the logarithm are bounded by the size of its Jordan blocks (Malgrange). The smallest
 case is $$f = x^3$$, where the fibre is three points, $$\mu = 2$$, and $$T$$ has order three, so
-cube roots appear. For Feynman integrals the homological side of this case exists:
+cube roots appear. For Feynman integrals the homological side of this case exists.
 Section 3.9 of Berghoff–Panzer gives the variation at an arbitrary isolated pinch in
 terms of the variation operator of the singularity. What does not exist is the expansion
 of the integral, with exponents and coefficients, on the contour that a Feynman integral

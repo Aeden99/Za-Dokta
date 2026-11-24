@@ -4,14 +4,14 @@ subtitle: "What was read, in what order, and what is still open"
 topic: "The Program"
 order: 4
 date: 2026-07-15
-updated: 2026-11-11
+updated: 2026-11-24
 summary: >-
   The literature behind the notes, in the order that worked, with what each item was
   needed for, and the list of questions that are open now.
 tags: [reading-list, roadmap, landau-singularities, picard-lefschetz, periods]
 ---
 
-These notes come out of reading towards one question: what a Feynman integral looks like
+The question behind these notes is what a Feynman integral looks like
 near a singularity whose critical point is degenerate or not isolated
 (Section 6 of the [algebraic-structure note]({{ '/notes/algebraic-structure-of-feynman-integrals/' | relative_url }})).
 This page lists what was read, in the order that worked, and what each item was needed
@@ -20,7 +20,7 @@ for. The last section is the list of open questions as it stands.
 ## 1. The known case
 
 **Hannesdóttir and Mizera, *What is the i$$\varepsilon$$ for the S-matrix?*** (arXiv:2204.02988).
-Chapter 7 is the starting point and is worth reading twice. It contains the formula for
+Chapter 7 is the starting point. It contains the formula for
 the type of a singularity when the critical point is isolated and non-degenerate:
 eqs. (7.12) and (7.15) in the interior of the simplex, (7.20) and (7.32) on a face, and
 (7.18) for the second type, with one-loop checks in Section 7.5. What has to be taken
@@ -57,7 +57,7 @@ Section 4, and the examples of Section 6. The
 [Picard–Lefschetz note]({{ '/notes/picard-lefschetz-and-singularity-type/' | relative_url }})
 is written around it.
 
-## 4. Where the singularities are
+## 4. The singular locus
 
 **Mizera and Telen** (Landau discriminants), **Fevola, Mizera and Telen**
 (arXiv:2311.14669 and arXiv:2311.16219, the principal Landau determinant),
@@ -67,25 +67,25 @@ examples **Chestnov and Crisanti** (arXiv:2511.14875) with the follow-up
 arXiv:2606.29612. After these the singular locus can be regarded as computable. The type
 of the singularity on each component is not addressed by any of them.
 
-## 5. What the functions are
+## 5. The functions
 
 **Brown** (arXiv:0804.1660 and arXiv:0910.0114) and **Panzer** (arXiv:1403.3385 and
 arXiv:1506.07243): hyperlogarithms, the reduction, and linear reducibility. See the
 [hyperlogarithm note]({{ '/notes/hyperlogarithms-and-linear-reducibility/' | relative_url }}).
 An explicit function is the only complete check of a statement about the type of a
-singularity, so this is not a side topic.
+singularity.
 
 ## 6. The coaction
 
 **Brown** (arXiv:1512.06409), **Brown and Dupont** (arXiv:1907.06603) and
 **Abreu, Britto, Duhr and Gardi** (arXiv:1703.05064). This is not needed for the local
 problem. It is the reason to keep the language of twisted periods and not to work only
-locally: discontinuities and differential equations are the two sides of one coaction.
+locally, since discontinuities and differential equations are the two sides of one coaction.
 
 ## 7. Close to the open problem
 
-- **Bourjaily, Vergu and von Hippel** (arXiv:2208.12765): roots of order higher than two
-  need limits of codimension higher than one.
+- **Bourjaily, Vergu and von Hippel** (arXiv:2208.12765): the suggestion that roots of order
+  higher than two need limits of codimension higher than one.
 - **Hannesdóttir, McLeod, Schwartz and Vergu, *The Landau Bootstrap***
   (arXiv:2410.02424): the exponent rule, the remark that known Feynman integrals have
   only square-root and logarithmic branch points, and how such information constrains
@@ -102,12 +102,12 @@ locally: discontinuities and differential equations are the two sides of one coa
 
 ## 8. Open questions
 
-Two questions from an earlier version of this page have been answered in the notes. The
+Two questions are answered in the notes. The
 point of the triangle where the anomalous threshold meets the normal threshold is solved
-in closed form (Theorem 3 of the triangle note). And a degenerate critical point has
-been located in a Feynman integral: the cusps of the Landau curve of the acnode graph
-are points of type $$A_2$$ (Proposition 7 of From Morse to A₂). The list now reads as
-follows.
+in closed form (Theorem 3 of the triangle note). A degenerate critical point has
+been located in a Feynman integral, at the cusps of the Landau curve of the acnode graph,
+which are points of type $$A_2$$ (Proposition 7 of From Morse to A₂). The following are
+open.
 
 1. **The acnode cusp.** The local model predicts the exponents $$\tfrac56$$ and $$\tfrac76$$
    in four dimensions. This has to be checked on the integral, either by numerical
