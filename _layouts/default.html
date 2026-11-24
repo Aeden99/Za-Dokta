@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <main class="site-main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+
+  <script>
+    // Theme toggle with persistence; respects OS preference by default.
+    (function () {
+      var root = document.documentElement;
+      var saved = localStorage.getItem('theme');
+      if (saved) root.setAttribute('data-theme', saved);
+      var btn = document.getElementById('theme-toggle');
+      if (btn) btn.addEventListener('click', function () {
+        var cur = root.getAttribute('data-theme');
+        var next = cur === 'dark' ? 'light'
+                 : cur === 'light' ? 'dark'
+                 : (matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark');
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
+</body>
+</html>

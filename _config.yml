@@ -1,0 +1,56 @@
+# --- Site ---------------------------------------------------------------------
+title: "Twisted Periods"
+tagline: "Working notes on the algebraic and analytic structure of Feynman integrals"
+description: >-
+  Working notes on Feynman integrals as twisted periods:
+  twisted cohomology, Euler and Landau discriminants, intersection numbers,
+  hyperlogarithms, the motivic coaction, Picard–Lefschetz theory, and the
+  analytic structure of amplitudes.
+author: "Devansh"
+lang: en
+
+# IMPORTANT: hosting URL.
+#   • User/org site  (repo named <username>.github.io)  ->  leave baseurl: ""
+#   • Project site   (repo named e.g. za-dokta)         ->  baseurl: "/za-dokta"
+# Every link/asset uses the relative_url filter, so this is the ONLY line to change.
+# Configured for a PROJECT site named "Za-Dokta". Change if you use a different repo name.
+baseurl: "/Za-Dokta"
+url: "https://aeden99.github.io"
+
+# --- Collections --------------------------------------------------------------
+collections:
+  notes:
+    output: true
+    permalink: /notes/:path/
+
+defaults:
+  - scope: { path: "", type: notes }
+    values: { layout: note }
+  - scope: { path: "" }
+    values: { layout: default }
+
+# --- Markdown & math ----------------------------------------------------------
+# math_engine: null  ->  kramdown does NOT touch $...$ / $$...$$; MathJax renders
+# everything. This means you can paste notes using plain single-$ inline math.
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: null
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+# --- Plugins (all whitelisted by GitHub Pages) --------------------------------
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# --- Build --------------------------------------------------------------------
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - SETUP.md
+  - vendor
+  - .github
+  - checks
