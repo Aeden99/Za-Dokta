@@ -5,6 +5,8 @@
    symmetry, the cubic term vanishes and the quartic term does not.
 3. Near such a point there is a pair of solutions of the Landau equations that are not
    symmetric, on a branch of the Landau curve tangent to the symmetric one.
+4. That branch is the second component of the Landau discriminant in Remark 9 of
+   Mizera-Telen.
 """
 import random
 import numpy as np
@@ -26,6 +28,12 @@ def M22(theta):
     w, r3 = mp.tan(theta/2), mp.sqrt(3)
     return ((3*w**8 + 2*r3*w**7 + 12*w**6 - 6*r3*w**5 + 14*w**4 + 14*r3*w**3 + 132*w**2 + 86*r3*w + 63)
             / ((w**2 + 1)**3*(3*w**2 + 2*r3*w + 9)))
+
+
+def D2(sv, tv, M2):
+    # second component of the Landau discriminant, Mizera-Telen, Remark 9, with m = 1
+    u = 2 + 2*M2 - sv - tv
+    return (u - M2 + 1)*((sv - 1)*(tv - 1) + (M2 - 1)*(3 - M2)) - 3*(M2 - 1)
 
 
 # ---------------------------------------------------------------------------------------
@@ -127,7 +135,19 @@ for dth in ('0.0025', '0.005'):
     claim('s - s_p = %s: all five Landau equations hold (residual %s), x1 - x3 = %s, parameters positive'
           % (mp.nstr(sv - s_p, 4), mp.nstr(residual, 2), mp.nstr(r[0] - r[2], 4)),
           residual < 1e-20 and abs(r[0] - r[2]) > 0.1 and all(z > 0 for z in r))
+    check('   Delta_acn,2 of Mizera-Telen at this solution, s = %s, t = %s' % (mp.nstr(sv, 6), mp.nstr(t_asym, 6)),
+          D2(sv, t_asym, M2), 0, tol=1e-18)
 ratio = (gaps[1][1]/gaps[0][1])/(gaps[1][0]/gaps[0][0])**2
 check('the gap between the two branches in t grows like (s - s_p)^2 (ratio)', ratio, 1, tol=0.15)
+
+# ---------------------------------------------------------------------------------------
+section('4. The second component of the Landau discriminant')
+for name, theta in (('0.2', mp.mpf('0.2')), ('pi/8', mp.pi/8), ('pi/6', mp.pi/6), ('0.9', mp.mpf('0.9'))):
+    M2v = M22(theta)
+    on_curve = lambda v: D2(*curve(v, M2v), M2v)
+    check('theta = %s, M^2 = M_2^2 = %s: Delta_acn,2 on the curve (3)' % (name, mp.nstr(M2v, 8)), on_curve(theta), 0, tol=1e-20)
+    check('   and its derivative along the curve (double zero)', mp.diff(on_curve, theta), 0, tol=1e-12)
+generic = D2(*curve(mp.mpf('0.3'), mp.mpf('8.6')), mp.mpf('8.6'))
+claim('at a generic point of the curve (3) it does not vanish: %s' % mp.nstr(generic, 6), abs(generic) > 0.01)
 
 summary()

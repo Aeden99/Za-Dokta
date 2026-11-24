@@ -126,6 +126,35 @@ exact('third derivative of the reduced function vanishes', g3)
 exact('fourth derivative of the reduced function is -16', g4 + 16)
 
 # ---------------------------------------------------------------------------------------
+section('The line s = t: the double point and the acnodes')
+cc = sp.cos(th - sp.pi/6)
+bracket = 1 - 2*r3*cc*K/(4*cc**2 - 3)
+exact('s - t = 4 sin(theta - pi/6) [1 - 2 sqrt3 r K/(4r^2 - 3)], r = cos(theta - pi/6)',
+      rat(sc - tc - 4*sp.sin(th - sp.pi/6)*bracket))
+Md2, Sd = 4 + 2*cc/r3 + r3/cc, 5 + 4*cc/r3 + r3/cc
+exact('the bracket vanishes at M^2 = 4 + 2r/sqrt3 + sqrt3/r', rat(bracket.subs(Msq, Md2)))
+exact('and there s = t = 5 + 4r/sqrt3 + sqrt3/r', [rat(sc.subs(Msq, Md2) - Sd), rat(tc.subs(Msq, Md2) - Sd)])
+cs = sp.symbols('c', positive=True)
+Mdc, Sdc = 4 + 2*cs/r3 + r3/cs, 5 + 4*cs/r3 + r3/cs
+c0 = sp.sqrt(sp.Rational(3, 2))
+exact('minimum of M^2 at r = sqrt(3/2), where M^2 = 4 + 2 sqrt2 and s = t = 5 + 3 sqrt2',
+      [sp.diff(Mdc, cs).subs(cs, c0), sp.simplify(Mdc.subs(cs, c0) - (4 + 2*sp.sqrt(2))),
+       sp.simplify(Sdc.subs(cs, c0) - (5 + 3*sp.sqrt(2)))])
+exact('r = 1 is the A3 point, and M^2 = 7 at r = sqrt3/2',
+      [sp.simplify(Mdc.subs(cs, 1) - M0), sp.simplify(Sdc.subs(cs, 1) - s0), sp.simplify(Mdc.subs(cs, r3/2) - 7)])
+claim('M^2 decreases in r on (sqrt3/2, 1), so the double point exists for 4 + 5/sqrt3 < M^2 < 7',
+      all(sp.diff(Mdc, cs).subs(cs, r3/2 + (1 - r3/2)*sp.Rational(k, 50)) < 0 for k in range(51)))
+# an acnode: theta = pi/6 + i y, so that phi is the complex conjugate of theta and r = cosh y
+s_num, t_num = sp.lambdify((th, Msq), sc, 'mpmath'), sp.lambdify((th, Msq), tc, 'mpmath')
+for yv in ('0.3', '0.8', '1.5'):
+    ch = mp.cosh(mp.mpf(yv))
+    M2v = 4 + 2*ch/mp.sqrt(3) + mp.sqrt(3)/ch
+    th_c = mp.pi/6 + 1j*mp.mpf(yv)
+    check('theta = pi/6 + %s i, M^2 = %s: s is real and equals 5 + 4r/sqrt3 + sqrt3/r' % (yv, mp.nstr(M2v, 8)),
+          s_num(th_c, M2v), 5 + 4*ch/mp.sqrt(3) + mp.sqrt(3)/ch, tol=1e-25)
+    check('   and t = s', t_num(th_c, M2v) - s_num(th_c, M2v), 0, tol=1e-25)
+
+# ---------------------------------------------------------------------------------------
 section('Example theta = pi/12')
 val = {th: sp.pi/12}
 r2, r6 = sp.sqrt(2), sp.sqrt(6)

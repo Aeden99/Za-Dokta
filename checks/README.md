@@ -11,8 +11,8 @@ They are not part of the built site.
 | `triangle.py` | The Triangle and the Anomalous Threshold | Lemma 1 and Proposition 1 (Gram identities, for up to five propagators), the equal-mass case, the logarithm at the anomalous threshold, Theorem 3 near the point where the two thresholds meet |
 | `a2_model.py` | From Morse to A₂, Sections 2 to 4 | the boundary model, the bubble with one massless line, the cubic model on the half-line and on the real line with the Feynman prescription, the unfolding, the two monodromy computations |
 | `sunrise.py` | From Morse to A₂, Section 5 | the critical points of the sunrise are non-degenerate |
-| `acnode.py` | From Morse to A₂, Section 5 | the polynomials of the acnode graph, Propositions 5, 6 and 7 as exact identities, the point of type A₃, the example at θ = π/12 |
-| `acnode_numeric.py` | From Morse to A₂, Section 5 | which graph has the Landau curve, the second degenerate locus, the branch of solutions that are not symmetric |
+| `acnode.py` | From Morse to A₂, Section 5 | the polynomials of the acnode graph, Propositions 5, 6 and 7 as exact identities, the point of type A₃, the double point and the acnodes on the line s = t, the example at θ = π/12 |
+| `acnode_numeric.py` | From Morse to A₂, Section 5 | which graph has the Landau curve, the second degenerate locus, the branch of solutions that are not symmetric, and that this branch is the second component of Mizera–Telen |
 | `massless_triangle.py` | Hyperlogarithms and Linear Reducibility | the reduction for the massless triangle and its value 4i D(z)/(z − z̄) |
 | `beta_function.py` | Algebraic Structure of Feynman Integrals | the twisted period relation for the beta function |
 
