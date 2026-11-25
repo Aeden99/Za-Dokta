@@ -426,6 +426,32 @@ $$ \begin{aligned}
 and $$x_* \approx (0.2527,\, 0.0925,\, 0.2527,\, 0.0925,\, 0.3095)$$ on the simplex. The point
 where the cusps merge is $$M^2 = 4 + 5/\sqrt3$$, $$s = t = 5 + 7/\sqrt3$$.
 
+**Acnodes and the double point.** Mizera and Telen state in Remark 9 that the real curve
+has acnodes and crunodes for $$M^2 \ge 4 + 2\sqrt2$$, while the cusps of Proposition 6 need
+$$M^2 > 4 + 5/\sqrt3$$. The two values belong to different events. Put
+$$r = \cos(\theta - \tfrac\pi6)$$. From (3),
+
+$$ s - t \;=\; 4\,\sin\!\big(\theta - \tfrac\pi6\big)\left[\,1 - \frac{2\sqrt3\,r\,K}{4r^2 - 3}\,\right], $$
+
+so apart from $$\theta = \pi/6$$ the curve meets the line $$s = t$$ where the bracket
+vanishes, which is at
+
+$$ M^2 \;=\; 4 + \frac{2r}{\sqrt3} + \frac{\sqrt3}{r}, \qquad
+   s \;=\; t \;=\; 5 + \frac{4r}{\sqrt3} + \frac{\sqrt3}{r}. \tag{4} $$
+
+For real $$\theta \ne \pi/6$$ in the interval we have $$\tfrac{\sqrt3}{2} < r < 1$$. Then
+$$\theta$$ and $$\pi/3 - \theta$$ give the same point, which is a double point of the real
+curve. By (4) it exists for $$4 + 5/\sqrt3 < M^2 < 7$$, the range in which there are cusps.
+For $$\theta = \tfrac\pi6 + iy$$ with $$y$$ real we have $$\varphi = \bar\theta$$ and
+$$r = \cosh y > 1$$, and (4) gives a real point of the Landau curve whose parameters are complex,
+an acnode. As a function of $$r$$ the mass in (4) has its minimum $$4 + 2\sqrt2$$ at
+$$r = \sqrt{3/2}$$, where $$s = t = 5 + 3\sqrt2$$. So a pair of acnodes appears at
+$$M^2 = 4 + 2\sqrt2$$. At $$M^2 = 4 + 5/\sqrt3$$ one of them reaches the real arc at the
+point of type $$A_3$$ and becomes the double point with its two cusps. The other one is
+there for all larger $$M^2$$. An isolated point that turns into a double point and two
+cusps is how the plane sections of a swallowtail change, in agreement with the type
+$$A_3$$ of the point.
+
 **Prediction of the local model.** In four dimensions (1) gives $$\gamma = 1$$ for this
 graph, so at an ordinary point of the Landau curve the integral behaves like
 $$\Delta\log\Delta$$ in the distance $$\Delta$$ to the curve. At the cusp, along a generic
@@ -479,6 +505,19 @@ function is $$b + a\,x - c\,x^2$$ on $$x \ge 0$$, as in Section 2, now with the 
 $$dx/\sqrt x$$. So two components of the Landau variety touch, as in the triangle, but at a
 point in the interior of the simplex.
 
+The branch that carries the pair is the second component of the Landau discriminant of
+the graph, which is given in Remark 9 of Mizera–Telen. With $$m = 1$$ it is the zero set of
+
+$$ \Delta_{\mathtt{acn},2} \;=\; \big(u - M^2 + 1\big)\big[(s-1)(t-1) + (M^2-1)(3-M^2)\big] - 3\,(M^2-1),
+   \qquad u = 2 + 2M^2 - s - t . $$
+
+This polynomial vanishes on the pair found above, and on the curve (3) it has a double
+zero at the points with $$M^2 = M_2^2(\theta)$$. Both statements were checked numerically.
+Mizera and Telen recall an argument of Risk that this component is never on the physical
+sheet. The pair found here has positive parameters at real $$(s,t)$$, for example at
+$$M^2 = 8.6$$, $$s \approx 5.01$$, $$t \approx 8.31$$. The two statements have not been
+reconciled, and Risk's paper has not been consulted.
+
 ## 6. Hannesdóttir–Mizera and Berghoff–Panzer side by side
 
 The two references look at the same critical points, one through expansions and one
@@ -511,6 +550,9 @@ and is not covered.
   down. It is an integral of Airy type.
 - The $$A_3$$ point at $$\theta = \pi/6$$ and the tangency at $$M_2^2(\theta)$$ have only been
   identified. Their expansions have not been worked out.
+- Solutions with positive parameters were found on the second component of the Landau
+  discriminant. This has to be reconciled with the argument of Risk that the component
+  is never on the physical sheet.
 - Critical sets of positive dimension are untouched. The smallest example is the massless
   triangle of Berghoff–Panzer (their Section 6.2).
 
@@ -521,7 +563,8 @@ and is not covered.
 - H. S. Hannesdóttir, A. J. McLeod, M. D. Schwartz, C. Vergu, *The Landau Bootstrap*, arXiv:2410.02424. The Landau exponent is their eq. (3).
 - J. L. Bourjaily, C. Vergu, M. von Hippel, *Landau Singularities and Higher-Order Roots*, arXiv:2208.12765.
 - R. J. Eden, P. V. Landshoff, J. C. Polkinghorne, J. C. Taylor, *Acnodes and cusps on Landau curves*, J. Math. Phys. 2 (1961) 656.
-- S. Mizera, S. Telen, *Landau Discriminants*, arXiv:2109.08036. Remark 9 treats the acnode graph.
+- S. Mizera, S. Telen, *Landau Discriminants*, arXiv:2109.08036. Remark 9 treats the acnode graph and gives the second component of its Landau discriminant.
+- C. Risk, *Analyticity of the Envelope Diagrams*, J. Math. Phys. 9 (1968) 2168, as cited in that remark. Not consulted.
 - F. Pham, *Formules de Picard–Lefschetz généralisées et ramification des intégrales*, Bull. Soc. Math. France 93 (1965) 333.
 - V. I. Arnold, S. M. Gusein-Zade, A. N. Varchenko, *Singularities of Differentiable Maps*, vols. I and II, for the classification, unfoldings and the asymptotics of integrals.
 - S. Srednyak, V. Khachatryan, *Vanishing cycles and analysis of singularities of Feynman diagrams*, arXiv:2307.11302.
